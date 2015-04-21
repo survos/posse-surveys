@@ -1,0 +1,237 @@
+{
+    "categoryCode": "single",
+    "projectId": 5,
+    "code": "demographics",
+    "name": "Section 100 - Initial Demographics",
+    "title": null,
+    "overview": null,
+    "isScored": false,
+    "hasHelpImages": false,
+    "sharingStatusCode": "project",
+    "hasReplacement": false,
+    "toolCode": null,
+    "repeatMax": 1,
+    "inputDataTypeCode": null,
+    "outputDataTypeCode": null,
+    "jobCategory": null,
+    "extraJson": "{\"ImportUrl\": \"https://trot.survos.com/survey/json/section100_demo.json?apikey=0a71e6230ed7aae56bdc29c009db3d26\", \"ScheduleType\": \"unscheduled\"}",
+    "defaultStartTime": null,
+    "defaultWeekendStartTime": null,
+    "defaultSchedulingWindow": null,
+    "defaultWeekendSchedulingWindow": null,
+    "questions": [
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "gender",
+            "type": "radio",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "Are you...?",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "",
+            "includeCondition": "",
+            "consensus": false,
+            "help": "",
+            "pattern": "",
+            "choicesUrl": "",
+            "otherLabel": "",
+            "order_idx": 1,
+            "smsText": "Are you...? (1=Female,2=Male)",
+            "choices": [
+                {
+                    "value": "1",
+                    "text": "Female",
+                    "url": ""
+                },
+                {
+                    "value": "2",
+                    "text": "Male",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "education",
+            "type": "boolean",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "Have you graduated from high-school or received a GED?",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "",
+            "includeCondition": "",
+            "consensus": false,
+            "help": "",
+            "pattern": "",
+            "choicesUrl": "",
+            "otherLabel": "",
+            "order_idx": 2,
+            "smsText": "Have you graduated from high-school or received a GED? (Y/N)",
+            "choices": [
+
+            ]
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "hispanic",
+            "type": "radio",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "Are you of Hispanic or Latino origin, such as Latin American, Mexican, Puerto Rican, or Cuban?",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "",
+            "includeCondition": "",
+            "consensus": false,
+            "help": "",
+            "pattern": "",
+            "choicesUrl": "",
+            "otherLabel": "",
+            "order_idx": 3,
+            "smsText": "Are you of Hispanic or Latino origin, such as Latin American, Mexican, Puerto Rican, or Cuban? (1=Yes, of Hispanic origin,2=No, not of Hispanic origin)",
+            "choices": [
+                {
+                    "value": "1",
+                    "text": "Yes, of Hispanic origin",
+                    "url": ""
+                },
+                {
+                    "value": "2",
+                    "text": "No, not of Hispanic origin",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "race",
+            "type": "checkbox",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "Which one or more of the following categories describe your race? Do you consider yourself\u2026?",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "",
+            "includeCondition": "",
+            "consensus": false,
+            "help": "",
+            "pattern": "",
+            "choicesUrl": "",
+            "otherLabel": "Other race (please specify)",
+            "noneLabel": "",
+            "order_idx": 4,
+            "smsText": "Which one or more of the following categories describe your race? Do you consider yourself\u2026? (1=White/European American,2=Black/African American,3=American Indian/Alaskan Native/Native American,4=Asian/Asian American,5=Pacific Islander/Native Hawaiian)",
+            "choices": [
+                {
+                    "value": "1",
+                    "text": "White/European American",
+                    "url": ""
+                },
+                {
+                    "value": "2",
+                    "text": "Black/African American",
+                    "url": ""
+                },
+                {
+                    "value": "3",
+                    "text": "American Indian/Alaskan Native/Native American",
+                    "url": ""
+                },
+                {
+                    "value": "4",
+                    "text": "Asian/Asian American",
+                    "url": ""
+                },
+                {
+                    "value": "5",
+                    "text": "Pacific Islander/Native Hawaiian",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "income_instructions",
+            "type": "instruction",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "The next question is about the total income of YOUR HOUSEHOLD for the PAST 12 MONTHS. Please include your income PLUS the income of all members living in your household (including cohabiting partners and armed forces members living at home). Please count income BEFORE TAXES and from all sources (such as wages, salaries, tips, net income from a business, interest, dividends, child support, alimony, and Social Security, public assistance, pensions, or retirement benefits).",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "",
+            "includeCondition": "",
+            "consensus": false,
+            "help": "",
+            "pattern": "",
+            "order_idx": 5,
+            "smsText": "The next question is about the total income of YOUR HOUSEHOLD for the PAST 12 MONTHS. Please include your income PLUS the income of all members living in your household (including cohabiting partners and armed forces members living at home). Please count income BEFORE TAXES and from all sources (such as wages, salaries, tips, net income from a business, interest, dividends, child support, alimony, and Social Security, public assistance, pensions, or retirement benefits)."
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "income",
+            "type": "radio",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "Was your total HOUSEHOLD income in the past 12 months\u2026\n[IS THIS THE INCOME QUESTION WE WANT TO USE??]",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "",
+            "includeCondition": "",
+            "consensus": false,
+            "help": "",
+            "pattern": "",
+            "choicesUrl": "",
+            "otherLabel": "",
+            "order_idx": 6,
+            "smsText": "Was your total HOUSEHOLD income in the past 12 months\u2026\n[IS THIS THE INCOME QUESTION WE WANT TO USE??] (1=Below $35,000,2=$35,000 or more,3=Don't know)",
+            "choices": [
+                {
+                    "value": "1",
+                    "text": "Below $35,000",
+                    "url": ""
+                },
+                {
+                    "value": "2",
+                    "text": "$35,000 or more",
+                    "url": ""
+                },
+                {
+                    "value": "3",
+                    "text": "Don't know",
+                    "url": ""
+                }
+            ]
+        }
+    ],
+    "replacements": {
+
+    },
+    "id": 1,
+    "showHelpImages": true
+}
