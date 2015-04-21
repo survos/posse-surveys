@@ -1,0 +1,750 @@
+{
+    "categoryCode": "single",
+    "projectId": 5,
+    "code": "tobacco_use_norms",
+    "name": "Section 200 - Tobacco Use and Social Norms Around Smoking",
+    "title": null,
+    "overview": null,
+    "isScored": false,
+    "hasHelpImages": false,
+    "sharingStatusCode": "project",
+    "hasReplacement": false,
+    "toolCode": null,
+    "repeatMax": 1,
+    "inputDataTypeCode": null,
+    "outputDataTypeCode": null,
+    "jobCategory": null,
+    "extraJson": "{\"ImportUrl\": \"https://trot.survos.com/survey/json/section200_tobac_use_social_norms.json?apikey=0a71e6230ed7aae56bdc29c009db3d26\", \"ScheduleType\": \"unscheduled\"}",
+    "defaultStartTime": null,
+    "defaultWeekendStartTime": null,
+    "defaultSchedulingWindow": null,
+    "defaultWeekendSchedulingWindow": null,
+    "questions": [
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "cig_30d",
+            "type": "number",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "During the past 30 days, on how many days did you smoke cigarettes (even 1 or 2 puffs)? \nType in the number of days for the answer.",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "",
+            "consensus": false,
+            "help": "",
+            "min": 0,
+            "max": 30,
+            "step": 1,
+            "order_idx": 1,
+            "smsText": "During the past 30 days, on how many days did you smoke cigarettes (even 1 or 2 puffs)? \nType in the number of days for the answer.",
+            "includeCondition": ""
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "cig_num",
+            "type": "radio",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "During the past 30 days, on the days that you smoked cigarettes, how many cigarettes did you smoke per day?",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "cig_30d>=1",
+            "consensus": false,
+            "help": "",
+            "choicesUrl": "",
+            "otherLabel": "",
+            "order_idx": 2,
+            "smsText": "During the past 30 days, on the days that you smoked cigarettes, how many cigarettes did you smoke per day? (1=Less than 1 cigarette per day,2=1 cigarette per day,3=2 to 5 cigarettes per day,4=6 to 10 cigarettes per day (about half a pack of cigarettes),5=11 to 20 cigarettes per day (about a pack of cigarettes),6=More than 20 cigarettes per day)",
+            "includeCondition": "",
+            "choices": [
+                {
+                    "value": "1",
+                    "text": "Less than 1 cigarette per day",
+                    "code": "",
+                    "url": ""
+                },
+                {
+                    "value": "2",
+                    "text": "1 cigarette per day",
+                    "code": "",
+                    "url": ""
+                },
+                {
+                    "value": "3",
+                    "text": "2 to 5 cigarettes per day",
+                    "code": "",
+                    "url": ""
+                },
+                {
+                    "value": "4",
+                    "text": "6 to 10 cigarettes per day (about half a pack of cigarettes)",
+                    "code": "",
+                    "url": ""
+                },
+                {
+                    "value": "5",
+                    "text": "11 to 20 cigarettes per day (about a pack of cigarettes)",
+                    "code": "",
+                    "url": ""
+                },
+                {
+                    "value": "6",
+                    "text": "More than 20 cigarettes per day",
+                    "code": "",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "use_menthol",
+            "type": "radio",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "Do you usually smoke menthol cigarettes?",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "cig_30d>=1",
+            "consensus": false,
+            "help": "",
+            "order_idx": 3,
+            "smsText": "Do you usually smoke menthol cigarettes? (1=Yes,2=No)",
+            "includeCondition": "",
+            "choicesUrl": "",
+            "otherLabel": "",
+            "choices": [
+                {
+                    "value": "1",
+                    "text": "Yes",
+                    "url": ""
+                },
+                {
+                    "value": "2",
+                    "text": "No",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "prefer_menthol",
+            "type": "radio",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "Do you prefer menthol flavored cigarettes?",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "cig_30d>=1",
+            "includeCondition": "",
+            "consensus": false,
+            "help": "",
+            "pattern": "",
+            "choicesUrl": "",
+            "otherLabel": "",
+            "order_idx": 4,
+            "smsText": "Do you prefer menthol flavored cigarettes? (1=Yes,2=No)",
+            "choices": [
+                {
+                    "value": "1",
+                    "text": "Yes",
+                    "url": ""
+                },
+                {
+                    "value": "2",
+                    "text": "No",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "quit_30d",
+            "type": "radio",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "Do you intend to quit smoking within the next 30 days?",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "cig_30d>=1",
+            "consensus": false,
+            "help": "",
+            "order_idx": 5,
+            "smsText": "Do you intend to quit smoking within the next 30 days? (1=Yes,2=No)",
+            "includeCondition": "",
+            "choicesUrl": "",
+            "otherLabel": "",
+            "choices": [
+                {
+                    "value": "1",
+                    "text": "Yes",
+                    "url": ""
+                },
+                {
+                    "value": "2",
+                    "text": "No",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "quit_6mo",
+            "type": "radio",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "Do you intend to quit smoking within the next 6 months?",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "quit_30d==2",
+            "consensus": false,
+            "help": "",
+            "choicesUrl": "",
+            "otherLabel": "",
+            "order_idx": 6,
+            "smsText": "Do you intend to quit smoking within the next 6 months? (1=Yes,2=No)",
+            "includeCondition": "",
+            "choices": [
+                {
+                    "value": "1",
+                    "text": "Yes",
+                    "code": "",
+                    "url": ""
+                },
+                {
+                    "value": "2",
+                    "text": "No",
+                    "code": "",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "quit_last_year",
+            "type": "radio",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "Did you try to stop completely at any point last year?",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "cig_30d>=1",
+            "includeCondition": "",
+            "consensus": false,
+            "help": "",
+            "pattern": "",
+            "choicesUrl": "",
+            "otherLabel": "",
+            "order_idx": 7,
+            "smsText": "Did you try to stop completely at any point last year? (1=Yes,2=No)",
+            "choices": [
+                {
+                    "value": "1",
+                    "text": "Yes",
+                    "url": ""
+                },
+                {
+                    "value": "2",
+                    "text": "No",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "buy_borrow",
+            "type": "radio",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "Think about the cigarettes you smoked in the past 30 days. How often do you buy your own cigarettes versus borrow cigarettes from other people?",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "cig_30d>=1",
+            "includeCondition": "",
+            "consensus": false,
+            "help": "",
+            "pattern": "",
+            "choicesUrl": "",
+            "otherLabel": "",
+            "order_idx": 8,
+            "smsText": "Think about the cigarettes you smoked in the past 30 days. How often do you buy your own cigarettes versus borrow cigarettes from other people? (1=Buy all the cigarettes you smoke,2=Buy most of your own cigarettes,3=Buy as many cigarettes as you borrow,4=Borrow most of the cigarettes you smoke,5=Borrow all the cigarettes you smoke)",
+            "choices": [
+                {
+                    "value": "1",
+                    "text": "Buy all the cigarettes you smoke",
+                    "url": ""
+                },
+                {
+                    "value": "2",
+                    "text": "Buy most of your own cigarettes",
+                    "url": ""
+                },
+                {
+                    "value": "3",
+                    "text": "Buy as many cigarettes as you borrow",
+                    "url": ""
+                },
+                {
+                    "value": "4",
+                    "text": "Borrow most of the cigarettes you smoke",
+                    "url": ""
+                },
+                {
+                    "value": "5",
+                    "text": "Borrow all the cigarettes you smoke",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "buy_cig_as",
+            "type": "radio",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "Do you usually buy cigarettes as...?",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "cig_30d>=1",
+            "includeCondition": "",
+            "consensus": false,
+            "help": "",
+            "pattern": "",
+            "choicesUrl": "",
+            "otherLabel": "",
+            "order_idx": 9,
+            "smsText": "Do you usually buy cigarettes as...? (1=A carton,2=A pack,3=One cigarette (\"loosies\"),4=Tobacco and roll your own,5=Don't buy cigarettes)",
+            "choices": [
+                {
+                    "value": "1",
+                    "text": "A carton",
+                    "url": ""
+                },
+                {
+                    "value": "2",
+                    "text": "A pack",
+                    "url": ""
+                },
+                {
+                    "value": "3",
+                    "text": "One cigarette (\"loosies\")",
+                    "url": ""
+                },
+                {
+                    "value": "4",
+                    "text": "Tobacco and roll your own",
+                    "url": ""
+                },
+                {
+                    "value": "5",
+                    "text": "Don't buy cigarettes",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "cig_brand",
+            "type": "radio",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "Do you always buy the same brand of cigarettes?",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "cig_30d>=1",
+            "includeCondition": "",
+            "consensus": false,
+            "help": "",
+            "pattern": "",
+            "choicesUrl": "",
+            "otherLabel": "",
+            "order_idx": 10,
+            "smsText": "Do you always buy the same brand of cigarettes? (1=Yes,2=No)",
+            "choices": [
+                {
+                    "value": "1",
+                    "text": "Yes",
+                    "url": ""
+                },
+                {
+                    "value": "2",
+                    "text": "No",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "where_buy",
+            "type": "radio",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "Where do you usually buy your cigarettes?",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "cig_30d>=1",
+            "includeCondition": "",
+            "consensus": false,
+            "help": "",
+            "pattern": "",
+            "choicesUrl": "",
+            "otherLabel": "",
+            "order_idx": 11,
+            "smsText": "Where do you usually buy your cigarettes? (1=Usually the same store,2=Whatever store is most convenient at the time,3=Don't buy cigarettes)",
+            "choices": [
+                {
+                    "value": "1",
+                    "text": "Usually the same store",
+                    "url": ""
+                },
+                {
+                    "value": "2",
+                    "text": "Whatever store is most convenient at the time",
+                    "url": ""
+                },
+                {
+                    "value": "3",
+                    "text": "Don't buy cigarettes",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "friends_smoke",
+            "type": "radio",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "Do any of your friends currently smoke any tobacco products some days or every day?",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "",
+            "includeCondition": "",
+            "consensus": false,
+            "help": "",
+            "pattern": "",
+            "choicesUrl": "",
+            "otherLabel": "",
+            "order_idx": 12,
+            "smsText": "Do any of your friends currently smoke any tobacco products some days or every day? (1=Yes,2=No)",
+            "choices": [
+                {
+                    "value": "1",
+                    "text": "Yes",
+                    "url": ""
+                },
+                {
+                    "value": "2",
+                    "text": "No",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "parent_smoking",
+            "type": "radio",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "Do your parents/guardians currently smoke any tobacco products some days or every day?",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "",
+            "includeCondition": "",
+            "consensus": false,
+            "help": "",
+            "pattern": "",
+            "choicesUrl": "",
+            "otherLabel": "",
+            "order_idx": 13,
+            "smsText": "Do your parents/guardians currently smoke any tobacco products some days or every day? (1=Yes,2=No)",
+            "choices": [
+                {
+                    "value": "1",
+                    "text": "Yes",
+                    "url": ""
+                },
+                {
+                    "value": "2",
+                    "text": "No",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "household_smoking",
+            "type": "radio",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "Does anyone you live with currently smoke any tobacco products some days or every day?",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "",
+            "includeCondition": "",
+            "consensus": false,
+            "help": "",
+            "pattern": "",
+            "choicesUrl": "",
+            "otherLabel": "",
+            "order_idx": 14,
+            "smsText": "Does anyone you live with currently smoke any tobacco products some days or every day? (1=Yes,2=No)",
+            "choices": [
+                {
+                    "value": "1",
+                    "text": "Yes",
+                    "url": ""
+                },
+                {
+                    "value": "2",
+                    "text": "No",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "ever_ecig",
+            "type": "radio",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "Have you ever smoked an e-cigarette (like Blu, NJOY, Smoking Everywhere)?\nINCLUDE IMAGE",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "",
+            "includeCondition": "",
+            "consensus": false,
+            "help": "",
+            "pattern": "",
+            "choicesUrl": "",
+            "otherLabel": "",
+            "order_idx": 15,
+            "smsText": "Have you ever smoked an e-cigarette (like Blu, NJOY, Smoking Everywhere)?\nINCLUDE IMAGE (1=Yes,2=No)",
+            "choices": [
+                {
+                    "value": "1",
+                    "text": "Yes",
+                    "url": ""
+                },
+                {
+                    "value": "2",
+                    "text": "No",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "ecig_num",
+            "type": "number",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "During the past 30 days, on how many days did you smoke an e-cigarette (even 1 or 2 puffs)? \nType in the number of days for the answer.",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "ever_ecig==1",
+            "includeCondition": "",
+            "consensus": false,
+            "help": "",
+            "pattern": "",
+            "min": 0,
+            "max": 30,
+            "step": 1,
+            "order_idx": 16,
+            "smsText": "During the past 30 days, on how many days did you smoke an e-cigarette (even 1 or 2 puffs)? \nType in the number of days for the answer."
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "ever_vape",
+            "type": "radio",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "Have you ever smoked an e-hookah, vape pen, or hookah pen (even 1 or 2 puffs)?",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "",
+            "includeCondition": "",
+            "consensus": false,
+            "help": "",
+            "pattern": "",
+            "choicesUrl": "",
+            "otherLabel": "",
+            "order_idx": 17,
+            "smsText": "Have you ever smoked an e-hookah, vape pen, or hookah pen (even 1 or 2 puffs)? (1=Yes,2=No)",
+            "choices": [
+                {
+                    "value": "1",
+                    "text": "Yes",
+                    "url": ""
+                },
+                {
+                    "value": "2",
+                    "text": "No",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "vape_num",
+            "type": "text",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "During the past 30 days, on how many days did you smoke an e-hookah, vape pen, or hookah pen (even 1 or 2 puffs)? \nType in the number of days for the answer.",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "ever_vape==1",
+            "includeCondition": "",
+            "consensus": false,
+            "help": "",
+            "pattern": "",
+            "order_idx": 18,
+            "smsText": "During the past 30 days, on how many days did you smoke an e-hookah, vape pen, or hookah pen (even 1 or 2 puffs)? \nType in the number of days for the answer."
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "mj_30d",
+            "type": "number",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "During the past 30 days, on how many days did you use marijuana?\nType in the number of days for the answer.",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "",
+            "includeCondition": "",
+            "consensus": false,
+            "help": "",
+            "pattern": "",
+            "min": 0,
+            "max": 30,
+            "step": 1,
+            "order_idx": 19,
+            "smsText": "During the past 30 days, on how many days did you use marijuana?\nType in the number of days for the answer."
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "blunt_instructions",
+            "type": "instruction",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "Sometimes people take tobacco out of a cigar and replace it with marijuana. This is sometimes called a \u2018blunt\u2019",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "",
+            "includeCondition": "",
+            "consensus": false,
+            "help": "",
+            "pattern": "",
+            "order_idx": 20,
+            "smsText": "Sometimes people take tobacco out of a cigar and replace it with marijuana. This is sometimes called a \u2018blunt\u2019"
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "blunt_30d",
+            "type": "number",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "During the past 30 days, on how many days did you smoke a blunt (even 1 or 2 puffs)?\nType in the number of days for the answer.",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "",
+            "includeCondition": "",
+            "consensus": false,
+            "help": "",
+            "pattern": "",
+            "min": 0,
+            "max": 30,
+            "step": 1,
+            "order_idx": 21,
+            "smsText": "During the past 30 days, on how many days did you smoke a blunt (even 1 or 2 puffs)?\nType in the number of days for the answer."
+        }
+    ],
+    "replacements": {
+
+    },
+    "id": 2,
+    "showHelpImages": true
+}
