@@ -1,0 +1,191 @@
+{
+    "categoryCode": "single",
+    "projectId": 5,
+    "code": "media_utilization",
+    "name": "Section 500 - Media Utilization",
+    "title": null,
+    "overview": null,
+    "isScored": false,
+    "hasHelpImages": false,
+    "sharingStatusCode": "project",
+    "hasReplacement": false,
+    "toolCode": null,
+    "repeatMax": 1,
+    "inputDataTypeCode": null,
+    "outputDataTypeCode": null,
+    "jobCategory": null,
+    "extraJson": "{\"ImportUrl\": \"https://trot.survos.com/survey/json/section500_media_use.json?apikey=0a71e6230ed7aae56bdc29c009db3d26\", \"ScheduleType\": \"unscheduled\"}",
+    "defaultStartTime": null,
+    "defaultWeekendStartTime": null,
+    "defaultSchedulingWindow": null,
+    "defaultWeekendSchedulingWindow": null,
+    "questions": [
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "internet_access",
+            "type": "radio",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "Do you have internet access where you live? (For example: Home, Apartment or Dorm)",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "",
+            "includeCondition": "",
+            "consensus": false,
+            "help": "",
+            "pattern": "",
+            "order_idx": 1,
+            "smsText": "Do you have internet access where you live? (For example: Home, Apartment or Dorm) (1=Yes,2=No)",
+            "choicesUrl": "",
+            "otherLabel": "",
+            "choices": [
+                {
+                    "value": "1",
+                    "text": "Yes",
+                    "url": ""
+                },
+                {
+                    "value": "2",
+                    "text": "No",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "social_media",
+            "type": "checkbox",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "In a typical week, which social media sites do you use?",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "",
+            "includeCondition": "",
+            "consensus": false,
+            "help": "",
+            "pattern": "",
+            "choicesUrl": "",
+            "otherLabel": "Other (please specify)",
+            "noneLabel": "I don't use any social media sites",
+            "choices": [
+                {
+                    "value": "1",
+                    "text": "Facebook",
+                    "url": ""
+                },
+                {
+                    "value": "2",
+                    "text": "Twitter",
+                    "url": ""
+                },
+                {
+                    "value": "3",
+                    "text": "Instagram",
+                    "url": ""
+                },
+                {
+                    "value": "4",
+                    "text": "YouTube",
+                    "url": ""
+                },
+                {
+                    "value": "5",
+                    "text": "Tumblr",
+                    "url": ""
+                },
+                {
+                    "value": "6",
+                    "text": "Google+",
+                    "url": ""
+                },
+                {
+                    "value": "7",
+                    "text": "Pinterest",
+                    "url": ""
+                },
+                {
+                    "value": "8",
+                    "text": "Snapchat",
+                    "url": ""
+                },
+                {
+                    "value": "9",
+                    "text": "Vine",
+                    "url": ""
+                }
+            ],
+            "order_idx": 2,
+            "smsText": "In a typical week, which social media sites do you use? (1=Facebook,2=Twitter,3=Instagram,4=YouTube,5=Tumblr,6=Google+,7=Pinterest,8=Snapchat,9=Vine)"
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "video_platforms",
+            "type": "checkbox",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "In a typical week, which video watching platforms do you use?",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "",
+            "includeCondition": "",
+            "consensus": false,
+            "help": "",
+            "pattern": "",
+            "choicesUrl": "",
+            "otherLabel": "One another online streaming website (please specify)",
+            "noneLabel": "I don't use any video watching sites",
+            "choices": [
+                {
+                    "value": "1",
+                    "text": "On Regular TV (network, broadcast, cable, or satellite TV on a TV set)",
+                    "url": ""
+                },
+                {
+                    "value": "2",
+                    "text": "On Hulu",
+                    "url": ""
+                },
+                {
+                    "value": "3",
+                    "text": "On Amazon Instant",
+                    "url": ""
+                },
+                {
+                    "value": "4",
+                    "text": "On Netflix",
+                    "url": ""
+                },
+                {
+                    "value": "5",
+                    "text": "On YouTube",
+                    "url": ""
+                },
+                {
+                    "value": "6",
+                    "text": "On a Television network website (ex: abc.com)",
+                    "url": ""
+                }
+            ],
+            "order_idx": 3,
+            "smsText": "In a typical week, which video watching platforms do you use? (1=On Regular TV (network, broadcast, cable, or satellite TV on a TV set),2=On Hulu,3=On Amazon Instant,4=On Netflix,5=On YouTube,6=On a Television network website (ex: abc.com))"
+        }
+    ],
+    "replacements": {
+
+    },
+    "id": 3,
+    "showHelpImages": true
+}
