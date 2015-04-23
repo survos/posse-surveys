@@ -1,0 +1,460 @@
+{
+    "categoryCode": "single",
+    "projectId": 1,
+    "code": "household_roster_relationships",
+    "name": "Household Roster-Relationships",
+    "title": "Household Roster-Relationships",
+    "overview": null,
+    "isScored": false,
+    "hasHelpImages": false,
+    "sharingStatusCode": "not_shared",
+    "hasReplacement": false,
+    "toolCode": null,
+    "repeatMax": 1,
+    "inputDataTypeCode": null,
+    "outputDataTypeCode": null,
+    "jobCategory": null,
+    "extraJson": "{\"ScheduleType\": \"unscheduled\", \"PhenxProtocolId\": \"11401\"}",
+    "defaultStartTime": null,
+    "defaultWeekendStartTime": null,
+    "defaultSchedulingWindow": null,
+    "defaultWeekendSchedulingWindow": null,
+    "questions": [
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "No_People_This_Address",
+            "type": "number",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "How many people are living or staying at this address?",
+            "choices": [
+
+            ],
+            "order_idx": 1,
+            "smsText": "How many people are living or staying at this address?"
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "Person1_initials",
+            "type": "text",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "What are Person 1's initials?",
+            "choices": [
+
+            ],
+            "order_idx": 2,
+            "smsText": "What are Person 1's initials?"
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "Person2_initials",
+            "type": "text",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "What are Person 2's initials?",
+            "choices": [
+
+            ],
+            "order_idx": 3,
+            "smsText": "What are Person 2's initials?"
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "Person2_Relationship",
+            "type": "radio",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "How is this person related to Person 1?",
+            "choices": [
+                {
+                    "text": "1 = Husband or wife",
+                    "value": 0,
+                    "code": "1_husband_or_wife",
+                    "url": ""
+                },
+                {
+                    "text": "2 = Son-in-law or daughter-in-law",
+                    "value": 1,
+                    "code": "2_son_in_law_or_daughter_in_law",
+                    "url": ""
+                },
+                {
+                    "text": "3 = Biological son or daughter",
+                    "value": 2,
+                    "code": "3_biological_son_or_daughter",
+                    "url": ""
+                },
+                {
+                    "text": "4 = Other relative",
+                    "value": 3,
+                    "code": "4_other_relative",
+                    "url": ""
+                },
+                {
+                    "text": "5 = Adopted son or daughter",
+                    "value": 4,
+                    "code": "5_adopted_son_or_daughter",
+                    "url": ""
+                },
+                {
+                    "text": "6 = Roomer or boarder",
+                    "value": 5,
+                    "code": "6_roomer_or_boarder",
+                    "url": ""
+                },
+                {
+                    "text": "7 = Stepson or stepdaughter",
+                    "value": 6,
+                    "code": "7_stepson_or_stepdaughter",
+                    "url": ""
+                },
+                {
+                    "text": "8 = Housemate or roommate",
+                    "value": 7,
+                    "code": "8_housemate_or_roommate",
+                    "url": ""
+                },
+                {
+                    "text": "9 = Brother or sister",
+                    "value": 8,
+                    "code": "9_brother_or_sister",
+                    "url": ""
+                },
+                {
+                    "text": "10 = Unmarried partner",
+                    "value": 9,
+                    "code": "10_unmarried_partner",
+                    "url": ""
+                },
+                {
+                    "text": "11 = Father or mother",
+                    "value": 10,
+                    "code": "11_father_or_mother",
+                    "url": ""
+                },
+                {
+                    "text": "12 = Foster child",
+                    "value": 11,
+                    "code": "12_foster_child",
+                    "url": ""
+                },
+                {
+                    "text": "13 = Grandchild",
+                    "value": 12,
+                    "code": "13_grandchild",
+                    "url": ""
+                },
+                {
+                    "text": "14 = Other nonrelative",
+                    "value": 13,
+                    "code": "14_other_nonrelative",
+                    "url": ""
+                },
+                {
+                    "text": "15 = Parent-in-law",
+                    "value": 14,
+                    "code": "15_parent_in_law",
+                    "url": ""
+                },
+                {
+                    "text": "77 = Refused",
+                    "value": 15,
+                    "code": "77_refused",
+                    "url": ""
+                },
+                {
+                    "text": "99 = Don't know",
+                    "value": 16,
+                    "code": "99_don_t_know",
+                    "url": ""
+                }
+            ],
+            "order_idx": 4,
+            "smsText": "How is this person related to Person 1? (1=1 = Husband or wife,2=2 = Son-in-law or daughter-in-law,3=3 = Biological son or daughter,4=4 = Other relative,5=5 = Adopted son or daughter,6=6 = Roomer or boarder,7=7 = Stepson or stepdaughter,8=8 = Housemate or roommate,9=9 = Brother or sister,10=10 = Unmarried partner,11=11 = Father or mother,12=12 = Foster child,13=13 = Grandchild,14=14 = Other nonrelative,15=15 = Parent-in-law,16=77 = Refused,17=99 = Don't know)"
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "Person3_initials",
+            "type": "text",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "What are Person 3's initials?",
+            "choices": [
+
+            ],
+            "order_idx": 5,
+            "smsText": "What are Person 3's initials?"
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "Person3_Relationship",
+            "type": "radio",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "How is this person related to Person 1?",
+            "choices": [
+                {
+                    "text": "1 = Husband or wife",
+                    "value": 0,
+                    "code": "1_husband_or_wife",
+                    "url": ""
+                },
+                {
+                    "text": "2 = Son-in-law or daughter-in-law",
+                    "value": 1,
+                    "code": "2_son_in_law_or_daughter_in_law",
+                    "url": ""
+                },
+                {
+                    "text": "3 = Biological son or daughter",
+                    "value": 2,
+                    "code": "3_biological_son_or_daughter",
+                    "url": ""
+                },
+                {
+                    "text": "4 = Other relative",
+                    "value": 3,
+                    "code": "4_other_relative",
+                    "url": ""
+                },
+                {
+                    "text": "5 = Adopted son or daughter",
+                    "value": 4,
+                    "code": "5_adopted_son_or_daughter",
+                    "url": ""
+                },
+                {
+                    "text": "6 = Roomer or boarder",
+                    "value": 5,
+                    "code": "6_roomer_or_boarder",
+                    "url": ""
+                },
+                {
+                    "text": "7 = Stepson or stepdaughter",
+                    "value": 6,
+                    "code": "7_stepson_or_stepdaughter",
+                    "url": ""
+                },
+                {
+                    "text": "8 = Housemate or roommate",
+                    "value": 7,
+                    "code": "8_housemate_or_roommate",
+                    "url": ""
+                },
+                {
+                    "text": "9 = Brother or sister",
+                    "value": 8,
+                    "code": "9_brother_or_sister",
+                    "url": ""
+                },
+                {
+                    "text": "10 = Unmarried partner",
+                    "value": 9,
+                    "code": "10_unmarried_partner",
+                    "url": ""
+                },
+                {
+                    "text": "11 = Father or mother",
+                    "value": 10,
+                    "code": "11_father_or_mother",
+                    "url": ""
+                },
+                {
+                    "text": "12 = Foster child",
+                    "value": 11,
+                    "code": "12_foster_child",
+                    "url": ""
+                },
+                {
+                    "text": "13 = Grandchild",
+                    "value": 12,
+                    "code": "13_grandchild",
+                    "url": ""
+                },
+                {
+                    "text": "14 = Other nonrelative",
+                    "value": 13,
+                    "code": "14_other_nonrelative",
+                    "url": ""
+                },
+                {
+                    "text": "15 = Parent-in-law",
+                    "value": 14,
+                    "code": "15_parent_in_law",
+                    "url": ""
+                },
+                {
+                    "text": "77 = Refused",
+                    "value": 15,
+                    "code": "77_refused",
+                    "url": ""
+                },
+                {
+                    "text": "99 = Don't know",
+                    "value": 16,
+                    "code": "99_don_t_know",
+                    "url": ""
+                }
+            ],
+            "order_idx": 6,
+            "smsText": "How is this person related to Person 1? (1=1 = Husband or wife,2=2 = Son-in-law or daughter-in-law,3=3 = Biological son or daughter,4=4 = Other relative,5=5 = Adopted son or daughter,6=6 = Roomer or boarder,7=7 = Stepson or stepdaughter,8=8 = Housemate or roommate,9=9 = Brother or sister,10=10 = Unmarried partner,11=11 = Father or mother,12=12 = Foster child,13=13 = Grandchild,14=14 = Other nonrelative,15=15 = Parent-in-law,16=77 = Refused,17=99 = Don't know)"
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "Person4_initials",
+            "type": "text",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "What are Person 4's initials?",
+            "choices": [
+
+            ],
+            "order_idx": 7,
+            "smsText": "What are Person 4's initials?"
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "Person4_Relationship",
+            "type": "radio",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "How is this person related to Person 1?",
+            "choices": [
+                {
+                    "text": "1 = Husband or wife",
+                    "value": 0,
+                    "code": "1_husband_or_wife",
+                    "url": ""
+                },
+                {
+                    "text": "2 = Son-in-law or daughter-in-law",
+                    "value": 1,
+                    "code": "2_son_in_law_or_daughter_in_law",
+                    "url": ""
+                },
+                {
+                    "text": "3 = Biological son or daughter",
+                    "value": 2,
+                    "code": "3_biological_son_or_daughter",
+                    "url": ""
+                },
+                {
+                    "text": "4 = Other relative",
+                    "value": 3,
+                    "code": "4_other_relative",
+                    "url": ""
+                },
+                {
+                    "text": "5 = Adopted son or daughter",
+                    "value": 4,
+                    "code": "5_adopted_son_or_daughter",
+                    "url": ""
+                },
+                {
+                    "text": "6 = Roomer or boarder",
+                    "value": 5,
+                    "code": "6_roomer_or_boarder",
+                    "url": ""
+                },
+                {
+                    "text": "7 = Stepson or stepdaughter",
+                    "value": 6,
+                    "code": "7_stepson_or_stepdaughter",
+                    "url": ""
+                },
+                {
+                    "text": "8 = Housemate or roommate",
+                    "value": 7,
+                    "code": "8_housemate_or_roommate",
+                    "url": ""
+                },
+                {
+                    "text": "9 = Brother or sister",
+                    "value": 8,
+                    "code": "9_brother_or_sister",
+                    "url": ""
+                },
+                {
+                    "text": "10 = Unmarried partner",
+                    "value": 9,
+                    "code": "10_unmarried_partner",
+                    "url": ""
+                },
+                {
+                    "text": "11 = Father or mother",
+                    "value": 10,
+                    "code": "11_father_or_mother",
+                    "url": ""
+                },
+                {
+                    "text": "12 = Foster child",
+                    "value": 11,
+                    "code": "12_foster_child",
+                    "url": ""
+                },
+                {
+                    "text": "13 = Grandchild",
+                    "value": 12,
+                    "code": "13_grandchild",
+                    "url": ""
+                },
+                {
+                    "text": "14 = Other nonrelative",
+                    "value": 13,
+                    "code": "14_other_nonrelative",
+                    "url": ""
+                },
+                {
+                    "text": "15 = Parent-in-law",
+                    "value": 14,
+                    "code": "15_parent_in_law",
+                    "url": ""
+                },
+                {
+                    "text": "77 = Refused",
+                    "value": 15,
+                    "code": "77_refused",
+                    "url": ""
+                },
+                {
+                    "text": "99 = Don't know",
+                    "value": 16,
+                    "code": "99_don_t_know",
+                    "url": ""
+                }
+            ],
+            "order_idx": 8,
+            "smsText": "How is this person related to Person 1? (1=1 = Husband or wife,2=2 = Son-in-law or daughter-in-law,3=3 = Biological son or daughter,4=4 = Other relative,5=5 = Adopted son or daughter,6=6 = Roomer or boarder,7=7 = Stepson or stepdaughter,8=8 = Housemate or roommate,9=9 = Brother or sister,10=10 = Unmarried partner,11=11 = Father or mother,12=12 = Foster child,13=13 = Grandchild,14=14 = Other nonrelative,15=15 = Parent-in-law,16=77 = Refused,17=99 = Don't know)"
+        }
+    ],
+    "replacements": {
+
+    },
+    "id": 1,
+    "showHelpImages": true
+}
