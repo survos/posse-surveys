@@ -1,0 +1,75 @@
+{
+    "categoryCode": "turk",
+    "projectId": 1,
+    "code": "dominant_color_in_photo",
+    "name": "Dominant Color in Photo",
+    "title": null,
+    "overview": null,
+    "isScored": false,
+    "hasHelpImages": false,
+    "sharingStatusCode": "not_shared",
+    "hasReplacement": false,
+    "toolCode": "image",
+    "repeatMax": 1,
+    "inputDataTypeCode": "image",
+    "outputDataTypeCode": null,
+    "jobCategory": null,
+    "extraJson": "{\"TaskTitle\": \"Find the dominant color in a photo\", \"TaskReward\": 0.01, \"TaskDescription\": \"Reviewing a photo, answer some questions about color.\"}",
+    "defaultStartTime": null,
+    "defaultWeekendStartTime": null,
+    "defaultSchedulingWindow": null,
+    "defaultWeekendSchedulingWindow": null,
+    "questions": [
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "color",
+            "type": "radio",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": true,
+            "text": "What is the dominant color you see in this photo?",
+            "required": true,
+            "hidden": false,
+            "default": "",
+            "condition": "",
+            "includeCondition": "",
+            "consensus": true,
+            "help": "",
+            "pattern": "",
+            "title": "",
+            "choicesUrl": "",
+            "otherLabel": "Other",
+            "choices": [
+                {
+                    "value": "red",
+                    "text": "Red",
+                    "url": ""
+                },
+                {
+                    "value": "blue",
+                    "text": "Blue",
+                    "url": ""
+                },
+                {
+                    "value": "green",
+                    "text": "Green",
+                    "url": ""
+                },
+                {
+                    "value": "black",
+                    "text": "Black",
+                    "url": ""
+                }
+            ],
+            "order_idx": 1,
+            "smsText": "What is the dominant color you see in this photo? (1=Red,2=Blue,3=Green,4=Black)"
+        }
+    ],
+    "replacements": {
+
+    },
+    "id": 3,
+    "showHelpImages": true
+}
