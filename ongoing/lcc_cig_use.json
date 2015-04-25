@@ -1,6 +1,6 @@
 {
     "categoryCode": "ongoing",
-    "projectId": 7,
+    "projectId": 1,
     "code": "lcc_cig_use",
     "name": "LCC and Cigarette Use",
     "title": null,
@@ -15,10 +15,18 @@
     "outputDataTypeCode": "image",
     "jobCategory": null,
     "extraJson": "{\"ImportUrl\": \"https://dualuse.survos.com/survey/json/lcc_cig_use.json?apikey=0a71e6230ed7aae56bdc29c009db3d26\", \"JobDuration\": 7, \"ScheduleType\": \"none\", \"SelfInitiated\": true, \"RecommendedFrequency\": 1}",
-    "defaultStartTime": null,
-    "defaultWeekendStartTime": null,
-    "defaultSchedulingWindow": null,
-    "defaultWeekendSchedulingWindow": null,
+    "defaultStartTime": {
+        "date": "2015-04-25 09:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "Europe/London"
+    },
+    "defaultWeekendStartTime": {
+        "date": "2015-04-25 10:00:00.000000",
+        "timezone_type": 3,
+        "timezone": "Europe/London"
+    },
+    "defaultSchedulingWindow": 5,
+    "defaultWeekendSchedulingWindow": 67,
     "questions": [
         {
             "phenxSource": null,
@@ -865,9 +873,7 @@
             ]
         }
     ],
-    "replacements": {
-
-    },
-    "id": 9,
+    "replacements": {},
+    "id": 11,
     "showHelpImages": true
 }
