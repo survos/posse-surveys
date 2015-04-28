@@ -1,0 +1,51 @@
+{
+    "categoryCode": "turk",
+    "projectId": 10,
+    "code": "zoom_tool_test",
+    "name": "Zoom Tool Test",
+    "title": null,
+    "overview": null,
+    "isScored": false,
+    "hasHelpImages": false,
+    "sharingStatusCode": "not_shared",
+    "hasReplacement": false,
+    "toolCode": "zoom",
+    "repeatMax": 1,
+    "inputDataTypeCode": "image",
+    "outputDataTypeCode": null,
+    "jobCategory": null,
+    "extraJson": null,
+    "defaultStartTime": null,
+    "defaultWeekendStartTime": null,
+    "defaultSchedulingWindow": null,
+    "defaultWeekendSchedulingWindow": null,
+    "questions": [
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "q1",
+            "type": "text",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "Zoom Test",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "",
+            "includeCondition": "",
+            "consensus": false,
+            "help": "",
+            "pattern": "",
+            "title": "",
+            "order_idx": 1,
+            "smsText": "Zoom Test"
+        }
+    ],
+    "replacements": {
+
+    },
+    "id": 18,
+    "showHelpImages": true
+}
