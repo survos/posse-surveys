@@ -1,0 +1,77 @@
+{
+    "categoryCode": "turk",
+    "projectId": 10,
+    "code": "crop_receipts",
+    "name": "Crop Receipts",
+    "title": null,
+    "overview": "Use the crop tool to define a region, the the camera to put that region into the correct category.  Categories can have multiple photos, and some categories (like upside down) may not have any.  Every receipt belongs in exact one category, there are usually 3-6 receipts per page.",
+    "isScored": false,
+    "hasHelpImages": false,
+    "sharingStatusCode": "not_shared",
+    "hasReplacement": false,
+    "toolCode": "crop",
+    "repeatMax": 1,
+    "inputDataTypeCode": "image",
+    "outputDataTypeCode": "image",
+    "jobCategory": null,
+    "extraJson": "{\"ImportUrl\": \"https://nyureceipts.survos.com/survey/json/crop_receipts.json?apikey=0a71e6230ed7aae56bdc29c009db3d26\", \"TaskTitle\": \"Crop Receipts\", \"TaskDescription\": \"Crop individual receipts from images of multiple receipts\"}",
+    "defaultStartTime": null,
+    "defaultWeekendStartTime": null,
+    "defaultSchedulingWindow": null,
+    "defaultWeekendSchedulingWindow": null,
+    "questions": [
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "receipt",
+            "type": "crop-tagger",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "Crop out each receipt in this image so that each resulting image only contains one receipt.",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "",
+            "includeCondition": "",
+            "consensus": false,
+            "help": "",
+            "pattern": "",
+            "selector": "img.croppable:first",
+            "tags": "",
+            "order_idx": 1,
+            "smsText": "Crop out each receipt in this image so that each resulting image only contains one receipt. (1=Vertical -- info on top, total at bottom,2=Horizonal -- info at left, total on right (lean left to view),3=Upside down,4=Horizonal -- info on right, total on left (lean right to view))",
+            "choicesUrl": "",
+            "otherLabel": "",
+            "thumb": "#instruction-crop-thumb",
+            "choices": [
+                {
+                    "value": "portrait",
+                    "text": "Vertical -- info on top, total at bottom",
+                    "url": ""
+                },
+                {
+                    "value": "turn_left",
+                    "text": "Horizonal -- info at left, total on right (lean left to view)",
+                    "url": ""
+                },
+                {
+                    "value": "upside_down",
+                    "text": "Upside down",
+                    "url": ""
+                },
+                {
+                    "value": "turn_right",
+                    "text": "Horizonal -- info on right, total on left (lean right to view)",
+                    "url": ""
+                }
+            ]
+        }
+    ],
+    "replacements": {
+
+    },
+    "id": 15,
+    "showHelpImages": true
+}
