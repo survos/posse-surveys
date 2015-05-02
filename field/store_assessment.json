@@ -1,6 +1,6 @@
 {
     "categoryCode": "field",
-    "projectId": 9,
+    "projectId": 7,
     "code": "store_assessment",
     "name": "Store Assessment",
     "title": null,
@@ -19,6 +19,17 @@
     "defaultWeekendStartTime": null,
     "defaultSchedulingWindow": null,
     "defaultWeekendSchedulingWindow": null,
+    "importSourceTypeCode": null,
+    "taskCodeTemplate": null,
+    "sampleDataIdentifier": null,
+    "sampleCsvData": null,
+    "sampleDataLimit": null,
+    "sampleDataAnalysisJson": null,
+    "codifyFieldsOnImport": null,
+    "initialImportFields": [
+
+    ],
+    "importFieldsJson": null,
     "questions": [
         {
             "phenxSource": null,
@@ -29,7 +40,7 @@
             "shortDisplay": null,
             "answerCount": null,
             "isConsensus": false,
-            "text": "Visit {{ name }} at {{ address }} in {{ pcity }}. Did you have any problems finding it?",
+            "text": "Visit {{ trade_name }} at {{ paddress_1 }} in {{ pcity }}. Did you have any problems finding it?",
             "required": false,
             "hidden": false,
             "default": "",
@@ -41,7 +52,7 @@
             "choicesUrl": "",
             "otherLabel": "",
             "order_idx": 1,
-            "smsText": "Visit {{ name }} at {{ address }} in {{ pcity }}. Did you have any problems finding it? (1=Yes,2=No)",
+            "smsText": "Visit {{ trade_name }} at {{ paddress_1 }} in {{ pcity }}. Did you have any problems finding it? (1=Yes,2=No)",
             "choices": [
                 {
                     "value": "1",
@@ -64,7 +75,7 @@
             "shortDisplay": null,
             "answerCount": null,
             "isConsensus": false,
-            "text": "Please describe the problem you had fining {{ name }}.",
+            "text": "Please describe the problem you had finding {{ trade_name }} or {{ paddress_1 }}",
             "required": false,
             "hidden": false,
             "default": "",
@@ -74,19 +85,40 @@
             "help": "",
             "pattern": "",
             "order_idx": 2,
-            "smsText": "Please describe the problem you had fining {{ name }}.",
+            "smsText": "Please describe the problem you had finding {{ trade_name }} or {{ paddress_1 }}",
             "title": ""
         },
         {
             "phenxSource": null,
             "phenxVarName": null,
             "phenxVarPrefix": null,
-            "code": "photo_property",
-            "type": "camera",
+            "code": "call_store",
+            "type": "textarea",
             "shortDisplay": null,
             "answerCount": null,
             "isConsensus": false,
-            "text": "Take a horizontal photo of the entire property of the store (for stores with gas stations, be sure to include the gas pumps).",
+            "text": "The phone number we have for this store is {{ phone }}.\nCall this number and report the result of the call.",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "find_store==1",
+            "includeCondition": "",
+            "consensus": false,
+            "help": "",
+            "pattern": "",
+            "order_idx": 3,
+            "smsText": "The phone number we have for this store is {{ phone }}.\nCall this number and report the result of the call."
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "photo_instructions",
+            "type": "instruction",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "Please take all of the following photos at every store.",
             "required": false,
             "hidden": false,
             "default": "",
@@ -95,18 +127,8 @@
             "consensus": false,
             "help": "",
             "pattern": "",
-            "max": 2,
-            "filename": "{{username}}-{{questionCode}}-{{timestamp}}.jpg",
-            "buttonText": "Take Photo",
-            "cameraApi": false,
-            "quality": 0,
-            "source": "camera",
-            "targetWidth": 0,
-            "targetHeight": 0,
-            "png": false,
-            "frontCamera": false,
-            "order_idx": 3,
-            "smsText": " Take a horizontal photo of the entire property of the store (for stores with gas stations, be sure to include the gas pumps)."
+            "order_idx": 4,
+            "smsText": "Please take all of the following photos at every store."
         },
         {
             "phenxSource": null,
@@ -136,7 +158,7 @@
             "targetHeight": 0,
             "png": false,
             "frontCamera": false,
-            "order_idx": 4,
+            "order_idx": 5,
             "smsText": " Stand far enough away from the store and take a \"wide\" horizontal photo that captures the entire front of the store."
         },
         {
@@ -167,7 +189,7 @@
             "targetHeight": 0,
             "png": false,
             "frontCamera": false,
-            "order_idx": 5,
+            "order_idx": 6,
             "smsText": " Take a horizontal photo that clearly shows just the store name."
         },
         {
@@ -179,7 +201,7 @@
             "shortDisplay": null,
             "answerCount": null,
             "isConsensus": false,
-            "text": "Take a vertical photo of just the front door of {{ address }}.",
+            "text": "Take a vertical photo of just the front door of {{ paddress_1 }}.",
             "required": false,
             "hidden": false,
             "default": "",
@@ -198,8 +220,8 @@
             "targetHeight": 0,
             "png": false,
             "frontCamera": false,
-            "order_idx": 6,
-            "smsText": " Take a vertical photo of just the front door of {{ address }}."
+            "order_idx": 7,
+            "smsText": " Take a vertical photo of just the front door of {{ paddress_1 }}."
         },
         {
             "phenxSource": null,
@@ -229,19 +251,19 @@
             "targetHeight": 0,
             "png": false,
             "frontCamera": false,
-            "order_idx": 7,
+            "order_idx": 8,
             "smsText": " Take a picture of every window/wall that had advertisements on it. Use the window/wall as the frame for the photo. "
         },
         {
             "phenxSource": null,
             "phenxVarName": null,
             "phenxVarPrefix": null,
-            "code": "side_ads",
-            "type": "radio",
+            "code": "notes",
+            "type": "textarea",
             "shortDisplay": null,
             "answerCount": null,
             "isConsensus": false,
-            "text": "Are there any ads on the exterior side(s) of the store?",
+            "text": "Notes/Comments",
             "required": false,
             "hidden": false,
             "default": "",
@@ -250,58 +272,13 @@
             "consensus": false,
             "help": "",
             "pattern": "",
-            "choicesUrl": "",
-            "otherLabel": "",
-            "order_idx": 8,
-            "smsText": "Are there any ads on the exterior side(s) of the store? (1=Yes,2=No)",
-            "choices": [
-                {
-                    "value": "1",
-                    "text": "Yes",
-                    "url": ""
-                },
-                {
-                    "value": "2",
-                    "text": "No",
-                    "url": ""
-                }
-            ]
-        },
-        {
-            "phenxSource": null,
-            "phenxVarName": null,
-            "phenxVarPrefix": null,
-            "code": "photo_side",
-            "type": "camera",
-            "shortDisplay": null,
-            "answerCount": null,
-            "isConsensus": false,
-            "text": "Stand far enough away from each side of the store and take \"wide\" horizontal photos that capture the whole side(s).",
-            "required": false,
-            "hidden": false,
-            "default": "",
-            "condition": "side_ads==1",
-            "includeCondition": "",
-            "consensus": false,
-            "help": "",
-            "pattern": "",
-            "max": 5,
-            "filename": "{{username}}-{{questionCode}}-{{timestamp}}.jpg",
-            "buttonText": "Take Photo",
-            "cameraApi": false,
-            "quality": 0,
-            "source": "camera",
-            "targetWidth": 0,
-            "targetHeight": 0,
-            "png": false,
-            "frontCamera": false,
             "order_idx": 9,
-            "smsText": " Stand far enough away from each side of the store and take \"wide\" horizontal photos that capture the whole side(s)."
+            "smsText": "Notes/Comments"
         }
     ],
     "replacements": {
 
     },
-    "id": 13,
+    "id": 1,
     "showHelpImages": true
 }
