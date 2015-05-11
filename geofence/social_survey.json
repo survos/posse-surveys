@@ -1,0 +1,103 @@
+{
+    "categoryCode": "geofence",
+    "projectId": 11,
+    "code": "social_survey",
+    "name": "Social Survey",
+    "title": null,
+    "overview": null,
+    "isScored": false,
+    "hasHelpImages": false,
+    "sharingStatusCode": "not_shared",
+    "hasReplacement": false,
+    "toolCode": null,
+    "repeatMax": 1,
+    "inputDataTypeCode": null,
+    "outputDataTypeCode": null,
+    "jobCategory": null,
+    "extraJson": null,
+    "defaultStartTime": null,
+    "defaultWeekendStartTime": null,
+    "defaultSchedulingWindow": null,
+    "defaultWeekendSchedulingWindow": null,
+    "importSourceTypeCode": null,
+    "taskCodeTemplate": null,
+    "sampleDataIdentifier": null,
+    "sampleCsvData": null,
+    "sampleDataLimit": null,
+    "sampleDataAnalysisJson": null,
+    "codifyFieldsOnImport": null,
+    "initialImportFields": [
+
+    ],
+    "importFieldsJson": null,
+    "questions": [
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "with_others",
+            "type": "radio",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "Were you with other people at this location?",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "",
+            "includeCondition": "",
+            "consensus": false,
+            "help": "",
+            "pattern": "",
+            "title": "",
+            "choicesUrl": "",
+            "otherLabel": "",
+            "order_idx": 1,
+            "smsText": "Were you with other people at this location? (1=Yes,2=No)",
+            "choices": [
+                {
+                    "value": "1",
+                    "text": "Yes",
+                    "url": ""
+                },
+                {
+                    "value": "2",
+                    "text": "No",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "connected",
+            "type": "radio-range",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "On a scale of 1-5, how connected do you feel with the people who were around you?",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "with_others==1",
+            "includeCondition": "",
+            "consensus": false,
+            "help": "",
+            "pattern": "",
+            "title": "",
+            "min": 1,
+            "max": 5,
+            "step": 1,
+            "leftLabel": "Very connected",
+            "rightLabel": "Not at all connected",
+            "order_idx": 2,
+            "smsText": "On a scale of 1-5, how connected do you feel with the people who were around you? (1=Very connected 5=Not at all connected)"
+        }
+    ],
+    "replacements": {
+
+    },
+    "id": 19,
+    "showHelpImages": true
+}
