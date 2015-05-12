@@ -1,0 +1,88 @@
+{
+    "categoryCode": "turk",
+    "projectId": 3,
+    "code": "crop_images",
+    "name": "Crop Images",
+    "title": null,
+    "overview": "Use the crop tool to define a region, then use the camera button to put that region in the correct category. Categories can have multiple photos, and some categories may not have any. Every receipt belongs to exactly one category. There are usually between 3 and 6 receipts per page.",
+    "isScored": false,
+    "hasHelpImages": false,
+    "sharingStatusCode": "not_shared",
+    "hasReplacement": false,
+    "toolCode": "crop_tagger",
+    "repeatMax": 1,
+    "inputDataTypeCode": "image",
+    "outputDataTypeCode": "image",
+    "jobCategory": null,
+    "extraJson": "{\"TaskTitle\": \"Crop Images\", \"TaskDescription\": \"Crop individual fast food restaurant receipts from images of multiple receipts\"}",
+    "defaultStartTime": null,
+    "defaultWeekendStartTime": null,
+    "defaultSchedulingWindow": null,
+    "defaultWeekendSchedulingWindow": null,
+    "importSourceTypeCode": null,
+    "taskCodeTemplate": null,
+    "sampleDataIdentifier": null,
+    "sampleCsvData": null,
+    "sampleDataLimit": null,
+    "sampleDataAnalysisJson": null,
+    "codifyFieldsOnImport": null,
+    "initialImportFields": [
+
+    ],
+    "importFieldsJson": null,
+    "questions": [
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "crop_receipts",
+            "type": "crop-tagger",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "Crop out each receipt in this image so that each resulting image only contains one receipt.",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "",
+            "includeCondition": "",
+            "consensus": false,
+            "help": "",
+            "pattern": "",
+            "title": "",
+            "choicesUrl": "",
+            "otherLabel": "",
+            "selector": "img.croppable:first",
+            "thumb": "#instruction-crop-thumb",
+            "choices": [
+                {
+                    "value": "1",
+                    "text": "Vertical - info on top, total on bottom",
+                    "url": ""
+                },
+                {
+                    "value": "2",
+                    "text": "Horizontal - top of receipt on the left",
+                    "url": ""
+                },
+                {
+                    "value": "3",
+                    "text": "Horizontal - top of receipt on right",
+                    "url": ""
+                },
+                {
+                    "value": "4",
+                    "text": "Upside down",
+                    "url": ""
+                }
+            ],
+            "order_idx": 1,
+            "smsText": "Crop out each receipt in this image so that each resulting image only contains one receipt. (1=Vertical - info on top, total on bottom,2=Horizontal - top of receipt on the left,3=Horizontal - top of receipt on right,4=Upside down)"
+        }
+    ],
+    "replacements": {
+
+    },
+    "id": 48,
+    "showHelpImages": true
+}
