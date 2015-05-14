@@ -1,6 +1,6 @@
 {
     "categoryCode": "field",
-    "projectId": 1,
+    "projectId": 10,
     "code": "behattestsurvey_field",
     "name": "behattestsurvey_field",
     "title": "Week 1 Questions (cig=coffee)",
@@ -19,6 +19,15 @@
     "defaultWeekendStartTime": null,
     "defaultSchedulingWindow": null,
     "defaultWeekendSchedulingWindow": null,
+    "importSourceTypeCode": null,
+    "taskCodeTemplate": null,
+    "sampleDataIdentifier": null,
+    "sampleCsvData": null,
+    "sampleDataLimit": null,
+    "sampleDataAnalysisJson": null,
+    "codifyFieldsOnImport": null,
+    "initialImportFields": [],
+    "importFieldsJson": null,
     "questions": [
         {
             "phenxSource": null,
@@ -40,7 +49,8 @@
             "min": 0,
             "max": 8,
             "step": 1,
-            "smsText": "How many cups of coffee did you drink in the last hour?"
+            "smsText": "How many cups of coffee did you drink in the last hour?",
+            "includeCondition": ""
         },
         {
             "phenxSource": null,
@@ -64,7 +74,8 @@
             "default": "",
             "help": "",
             "step": 1,
-            "smsText": "How pleasurable was drinking the cup of coffee? (0=Not at all 9=A whole lot)"
+            "smsText": "How pleasurable was drinking the cup of coffee? (0=Not at all 9=A whole lot)",
+            "includeCondition": ""
         },
         {
             "phenxSource": null,
@@ -88,7 +99,8 @@
             "leftLabel": "Not at all",
             "rightLabel": "A whole lot",
             "order_idx": 3,
-            "smsText": "How satisfying was drinking the cup of coffee? (0=Not at all 9=A whole lot)"
+            "smsText": "How satisfying was drinking the cup of coffee? (0=Not at all 9=A whole lot)",
+            "includeCondition": ""
         },
         {
             "phenxSource": null,
@@ -112,10 +124,11 @@
             "default": "",
             "help": "",
             "step": 1,
-            "smsText": "Right now, how much do you want to drink a cup of coffee? (0=Not at all 9=A whole lot)"
+            "smsText": "Right now, how much do you want to drink a cup of coffee? (0=Not at all 9=A whole lot)",
+            "includeCondition": ""
         }
     ],
     "replacements": {},
-    "id": 2,
+    "id": 23,
     "showHelpImages": true
 }
