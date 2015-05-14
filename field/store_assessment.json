@@ -97,7 +97,7 @@
             "shortDisplay": null,
             "answerCount": null,
             "isConsensus": false,
-            "text": "The phone number we have for this store is {{ phone }}.\nCall this number and report the result of the call.",
+            "text": "The phone number we have for this store is <a href=\"tel:+1-{{ phone }}\">{{ phone }}</a>.\nCall this number and report the result of the call.",
             "required": false,
             "hidden": false,
             "default": "",
@@ -107,7 +107,7 @@
             "help": "",
             "pattern": "",
             "order_idx": 3,
-            "smsText": "The phone number we have for this store is {{ phone }}.\nCall this number and report the result of the call."
+            "smsText": "The phone number we have for this store is <a href=\"tel:+1-{{ phone }}\">{{ phone }}</a>.\nCall this number and report the result of the call."
         },
         {
             "phenxSource": null,
@@ -179,7 +179,7 @@
             "consensus": false,
             "help": "",
             "pattern": "",
-            "max": 1,
+            "max": 2,
             "filename": "{{username}}-{{questionCode}}-{{timestamp}}.jpg",
             "buttonText": "Take Photo",
             "cameraApi": false,
