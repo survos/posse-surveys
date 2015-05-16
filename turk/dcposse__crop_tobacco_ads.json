@@ -1,0 +1,78 @@
+{
+    "categoryCode": "turk",
+    "projectId": 7,
+    "code": "crop_tobacco_ads",
+    "name": "Crop Tobacco Ads",
+    "title": null,
+    "overview": "Use the crop tool to define a region, then use the camera button to put that region in the correct category. Categories can have multiple photos, and some categories may not have any. Every receipt belongs to exactly one category. There are usually between 3 and 6 receipts per page.",
+    "isScored": false,
+    "hasHelpImages": false,
+    "sharingStatusCode": "unrestricted",
+    "hasReplacement": false,
+    "toolCode": "crop_tagger",
+    "repeatMax": 1,
+    "inputDataTypeCode": "image",
+    "outputDataTypeCode": "image",
+    "jobCategory": null,
+    "extraJson": "{\"TaskTitle\": \"Crop Tobacco Ads\", \"TaskDescription\": \"Crop individual tobacco ads from store photos\"}",
+    "defaultStartTime": null,
+    "defaultWeekendStartTime": null,
+    "defaultSchedulingWindow": null,
+    "defaultWeekendSchedulingWindow": null,
+    "importSourceTypeCode": null,
+    "taskCodeTemplate": null,
+    "sampleDataIdentifier": null,
+    "sampleCsvData": null,
+    "sampleDataLimit": null,
+    "sampleDataAnalysisJson": null,
+    "codifyFieldsOnImport": null,
+    "initialImportFields": [
+
+    ],
+    "importFieldsJson": null,
+    "questions": [
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "ads",
+            "type": "crop-tagger",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "Crop out each individual ad put it in the appropriate category.  Each ad should have one and only one brand name, so crop things like \"Marlboro\" but not \"Cigarettes Sold Here\".",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "",
+            "includeCondition": "",
+            "consensus": false,
+            "help": "",
+            "pattern": "",
+            "title": "",
+            "choicesUrl": "",
+            "otherLabel": "",
+            "selector": "img.croppable:first",
+            "thumb": "#instruction-crop-thumb",
+            "order_idx": 1,
+            "smsText": "Crop out each individual ad put it in the appropriate category.  Each ad should have one and only one brand name, so crop things like \"Marlboro\" but not \"Cigarettes Sold Here\". (1=With A Price,2=Without A Price)",
+            "choices": [
+                {
+                    "value": "with_prices",
+                    "text": "With A Price",
+                    "url": ""
+                },
+                {
+                    "value": "without_prices",
+                    "text": "Without A Price",
+                    "url": ""
+                }
+            ]
+        }
+    ],
+    "replacements": {
+
+    },
+    "id": 53,
+    "showHelpImages": true
+}
