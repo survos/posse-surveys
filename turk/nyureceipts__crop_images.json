@@ -1,0 +1,83 @@
+{
+    "categoryCode": "turk",
+    "projectId": 3,
+    "code": "crop_images",
+    "name": "Crop Images",
+    "title": null,
+    "overview": "Use the crop tool to define a region, then use the camera button to put that region in the correct category. Categories can have multiple photos, and some categories may not have any. Every receipt belongs to exactly one category. There are usually between 3 and 6 receipts per page.",
+    "isScored": false,
+    "hasHelpImages": false,
+    "sharingStatusCode": "not_shared",
+    "hasReplacement": false,
+    "toolCode": "crop_tagger",
+    "repeatMax": 1,
+    "inputDataTypeCode": "image",
+    "outputDataTypeCode": "image",
+    "jobCategory": null,
+    "extraJson": "{\"TaskTitle\": \"Crop Images\", \"TaskDescription\": \"Crop individual fast food restaurant receipts from images of multiple receipts\"}",
+    "defaultStartTime": null,
+    "defaultWeekendStartTime": null,
+    "defaultSchedulingWindow": null,
+    "defaultWeekendSchedulingWindow": null,
+    "importSourceTypeCode": null,
+    "taskCodeTemplate": null,
+    "sampleDataIdentifier": null,
+    "sampleCsvData": null,
+    "sampleDataLimit": null,
+    "sampleDataAnalysisJson": null,
+    "codifyFieldsOnImport": null,
+    "initialImportFields": [
+
+    ],
+    "importFieldsJson": null,
+    "questions": [
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "crop_receipts",
+            "type": "crop-tagger",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "Crop each receipt and put it into the appropriate category.  After cropping, rotate the image if necessary.",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "",
+            "includeCondition": "",
+            "consensus": false,
+            "help": "",
+            "pattern": "",
+            "title": "",
+            "choicesUrl": "",
+            "otherLabel": "",
+            "selector": "img.croppable:first",
+            "thumb": "#instruction-crop-thumb",
+            "order_idx": 1,
+            "smsText": "Crop each receipt and put it into the appropriate category.  After cropping, rotate the image if necessary. (1=The items and prices are readable,2=Some of the items and prices are readable, but not all of them,3=Little or no information is readable)",
+            "choices": [
+                {
+                    "value": "clean",
+                    "text": "The items and prices are readable",
+                    "url": ""
+                },
+                {
+                    "value": "okay",
+                    "text": "Some of the items and prices are readable, but not all of them",
+                    "url": ""
+                },
+                {
+                    "value": "bad",
+                    "text": "Little or no information is readable",
+                    "url": ""
+                }
+            ]
+        }
+    ],
+    "replacements": {
+
+    },
+    "id": 48,
+    "showHelpImages": true
+}
