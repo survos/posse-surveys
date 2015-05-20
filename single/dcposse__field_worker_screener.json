@@ -1,0 +1,208 @@
+{
+    "categoryCode": "single",
+    "projectId": 7,
+    "code": "field_worker_screener",
+    "name": "Field Worker Screener",
+    "title": null,
+    "overview": "We are hiring field workers to visit stores in the Washington, DC area and fill out a brief survey on their iPhone or Android and take a few pictures of the store exterior. The survey takes about 5 minutes and is done outside the store, and does not involve interacting with people. Please answer the following questions to determine if you are eligible.",
+    "isScored": false,
+    "hasHelpImages": false,
+    "sharingStatusCode": "not_shared",
+    "hasReplacement": false,
+    "toolCode": null,
+    "repeatMax": 1,
+    "inputDataTypeCode": null,
+    "outputDataTypeCode": null,
+    "jobCategory": null,
+    "extraJson": "{\"ScheduleType\": \"unscheduled\"}",
+    "defaultStartTime": null,
+    "defaultWeekendStartTime": null,
+    "defaultSchedulingWindow": null,
+    "defaultWeekendSchedulingWindow": null,
+    "importSourceTypeCode": null,
+    "taskCodeTemplate": null,
+    "sampleDataIdentifier": null,
+    "sampleCsvData": null,
+    "sampleDataLimit": null,
+    "sampleDataAnalysisJson": null,
+    "codifyFieldsOnImport": null,
+    "initialImportFields": [
+
+    ],
+    "importFieldsJson": null,
+    "questions": [
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "zip_codes",
+            "type": "textarea",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "What are your top choices for zip codes you'd like to survey?",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "",
+            "includeCondition": "",
+            "consensus": false,
+            "help": "",
+            "pattern": "",
+            "title": "",
+            "order_idx": 1,
+            "smsText": "What are your top choices for zip codes you'd like to survey?"
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "phone_type",
+            "type": "radio",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "What kind of phone do you have?",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "",
+            "includeCondition": "",
+            "consensus": false,
+            "help": "",
+            "pattern": "",
+            "title": "",
+            "choicesUrl": "",
+            "otherLabel": "Other (please specify)",
+            "order_idx": 2,
+            "smsText": "What kind of phone do you have? (1=iPhone,2=Android,3=None)",
+            "choices": [
+                {
+                    "value": "1",
+                    "text": "iPhone",
+                    "url": ""
+                },
+                {
+                    "value": "2",
+                    "text": "Android",
+                    "url": ""
+                },
+                {
+                    "value": "3",
+                    "text": "None",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "car_bike",
+            "type": "radio",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "Do you own a car or bike that you could use to visit the stores?",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "",
+            "includeCondition": "",
+            "consensus": false,
+            "help": "",
+            "pattern": "",
+            "title": "",
+            "choicesUrl": "",
+            "otherLabel": "",
+            "order_idx": 3,
+            "smsText": "Do you own a car or bike that you could use to visit the stores? (1=Yes,2=No)",
+            "choices": [
+                {
+                    "value": "1",
+                    "text": "Yes",
+                    "url": ""
+                },
+                {
+                    "value": "2",
+                    "text": "No",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "phone_",
+            "type": "text",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "What is the best phone number to reach you?",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "",
+            "includeCondition": "",
+            "consensus": false,
+            "help": "",
+            "pattern": "",
+            "title": "",
+            "order_idx": 4,
+            "smsText": "What is the best phone number to reach you?"
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "training_dates",
+            "type": "checkbox",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "Please indicate which of the following days you would be available to attend the 1-hour paid training.",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "",
+            "includeCondition": "",
+            "consensus": false,
+            "help": "",
+            "pattern": "",
+            "title": "",
+            "choicesUrl": "",
+            "otherLabel": "",
+            "noneLabel": "",
+            "order_idx": 5,
+            "smsText": "Please indicate which of the following days you would be available to attend the 1-hour paid training. (1=Friday 5/22, 11:00AM,2=Tuesday 5/26, 4:00PM,3=Wednesday 5/27, 1:00PM,4=Thursday 5/28, 4:00PM)",
+            "choices": [
+                {
+                    "value": "1",
+                    "text": "Friday 5/22, 11:00AM",
+                    "url": ""
+                },
+                {
+                    "value": "2",
+                    "text": "Tuesday 5/26, 4:00PM",
+                    "url": ""
+                },
+                {
+                    "value": "3",
+                    "text": "Wednesday 5/27, 1:00PM",
+                    "url": ""
+                },
+                {
+                    "value": "4",
+                    "text": "Thursday 5/28, 4:00PM",
+                    "url": ""
+                }
+            ]
+        }
+    ],
+    "replacements": {
+
+    },
+    "id": 38,
+    "showHelpImages": true
+}
