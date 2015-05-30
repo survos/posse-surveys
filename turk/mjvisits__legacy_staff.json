@@ -1,0 +1,103 @@
+{
+    "categoryCode": "turk",
+    "projectId": 37,
+    "code": "legacy_staff",
+    "name": "Legacy Staff",
+    "title": null,
+    "overview": "This is a qualification survey",
+    "isScored": false,
+    "hasHelpImages": false,
+    "sharingStatusCode": "not_shared",
+    "hasReplacement": false,
+    "toolCode": null,
+    "repeatMax": 1,
+    "inputDataTypeCode": null,
+    "outputDataTypeCode": null,
+    "jobCategory": null,
+    "extraJson": "{\"TaskTitle\": \"Is Legacy Staff\", \"TaskDescription\": \"Something to confirm that you are part of the Legacy team\"}",
+    "defaultStartTime": null,
+    "defaultWeekendStartTime": null,
+    "defaultSchedulingWindow": null,
+    "defaultWeekendSchedulingWindow": null,
+    "importSourceTypeCode": null,
+    "taskCodeTemplate": null,
+    "sampleDataIdentifier": null,
+    "sampleCsvData": null,
+    "sampleDataLimit": null,
+    "sampleDataAnalysisJson": null,
+    "codifyFieldsOnImport": null,
+    "initialImportFields": [
+
+    ],
+    "importFieldsJson": null,
+    "questions": [
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "legacy_email",
+            "type": "text",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "What is your legacy email?",
+            "required": true,
+            "hidden": false,
+            "default": "",
+            "condition": "",
+            "includeCondition": "",
+            "consensus": false,
+            "help": "",
+            "pattern": "",
+            "title": "",
+            "order_idx": 1,
+            "smsText": "What is your legacy email?"
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "affiliation",
+            "type": "radio",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "What is your Legacy affiliation?",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "",
+            "includeCondition": "",
+            "consensus": false,
+            "help": "",
+            "pattern": "",
+            "title": "",
+            "choicesUrl": "",
+            "otherLabel": "",
+            "order_idx": 2,
+            "smsText": "What is your Legacy affiliation? (1=Employee,2=Contractor,3=Other)",
+            "choices": [
+                {
+                    "value": "employee",
+                    "text": "Employee",
+                    "url": ""
+                },
+                {
+                    "value": "contractor",
+                    "text": "Contractor",
+                    "url": ""
+                },
+                {
+                    "value": "other",
+                    "text": "Other",
+                    "url": ""
+                }
+            ]
+        }
+    ],
+    "replacements": {
+
+    },
+    "id": 79,
+    "showHelpImages": true
+}
