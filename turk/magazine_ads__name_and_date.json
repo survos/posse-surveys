@@ -57,30 +57,6 @@
             "phenxSource": null,
             "phenxVarName": null,
             "phenxVarPrefix": null,
-            "code": "date",
-            "type": "date",
-            "shortDisplay": null,
-            "answerCount": null,
-            "isConsensus": true,
-            "text": "What is the date of this magazine?  If it's a monthly magazine, use the first of the month.",
-            "required": true,
-            "hidden": false,
-            "default": "",
-            "condition": "",
-            "includeCondition": "",
-            "consensus": true,
-            "help": "",
-            "pattern": "",
-            "title": "",
-            "min": "",
-            "max": "",
-            "order_idx": 2,
-            "smsText": "What is the date of this magazine?  If it's a monthly magazine, use the first of the month."
-        },
-        {
-            "phenxSource": null,
-            "phenxVarName": null,
-            "phenxVarPrefix": null,
             "code": "type",
             "type": "radio",
             "shortDisplay": null,
@@ -98,6 +74,8 @@
             "title": "",
             "choicesUrl": "",
             "otherLabel": "Other",
+            "order_idx": 2,
+            "smsText": "How would you describe this image? (1=Magazine Cover,2=Tobacco Ad,3=Alcohol ad,4=Other ad)",
             "choices": [
                 {
                     "value": "cover",
@@ -119,9 +97,70 @@
                     "text": "Other ad",
                     "url": ""
                 }
+            ]
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "date_issue",
+            "type": "radio",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": true,
+            "text": "Is there any problem with getting the date?  Mouse over the image to activate the zoom tool",
+            "required": true,
+            "hidden": false,
+            "default": "",
+            "condition": "",
+            "includeCondition": "",
+            "consensus": true,
+            "help": "",
+            "pattern": "",
+            "title": "",
+            "min": 0,
+            "max": 0,
+            "step": 1,
+            "choicesUrl": "",
+            "otherLabel": "",
+            "choices": [
+                {
+                    "value": "not_visible",
+                    "text": "Not visible -- either blurry or missing",
+                    "url": ""
+                },
+                {
+                    "value": "no_issue",
+                    "text": "No issue, the date is visible",
+                    "url": ""
+                }
             ],
             "order_idx": 3,
-            "smsText": "How would you describe this image? (1=Magazine Cover,2=Tobacco Ad,3=Alcohol ad,4=Other ad)"
+            "smsText": "Is there any problem with getting the date?  Mouse over the image to activate the zoom tool (1=Not visible -- either blurry or missing,2=No issue, the date is visible)"
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "date",
+            "type": "date",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": true,
+            "text": "What is the date of this magazine?  If it's a monthly magazine, use the first of the month.",
+            "required": true,
+            "hidden": false,
+            "default": "",
+            "condition": "date_issue == 'no_issue'",
+            "includeCondition": "",
+            "consensus": true,
+            "help": "",
+            "pattern": "",
+            "title": "",
+            "min": "",
+            "max": "",
+            "order_idx": 4,
+            "smsText": "What is the date of this magazine?  If it's a monthly magazine, use the first of the month."
         }
     ],
     "replacements": {
