@@ -76,6 +76,52 @@
             "max": "",
             "order_idx": 2,
             "smsText": "What is the date of this magazine?  If it's a monthly magazine, use the first of the month."
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "type",
+            "type": "radio",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": true,
+            "text": "How would you describe this image?",
+            "required": true,
+            "hidden": false,
+            "default": "",
+            "condition": "",
+            "includeCondition": "",
+            "consensus": true,
+            "help": "",
+            "pattern": "",
+            "title": "",
+            "choicesUrl": "",
+            "otherLabel": "Other",
+            "choices": [
+                {
+                    "value": "cover",
+                    "text": "Magazine Cover",
+                    "url": ""
+                },
+                {
+                    "value": "tobacco_ad",
+                    "text": "Tobacco Ad",
+                    "url": ""
+                },
+                {
+                    "value": "alcohol_ad",
+                    "text": "Alcohol ad",
+                    "url": ""
+                },
+                {
+                    "value": "other_ad",
+                    "text": "Other ad",
+                    "url": ""
+                }
+            ],
+            "order_idx": 3,
+            "smsText": "How would you describe this image? (1=Magazine Cover,2=Tobacco Ad,3=Alcohol ad,4=Other ad)"
         }
     ],
     "replacements": {
