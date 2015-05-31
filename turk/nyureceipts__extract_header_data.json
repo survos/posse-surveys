@@ -1,0 +1,178 @@
+{
+    "categoryCode": "turk",
+    "projectId": 3,
+    "code": "extract_header_data",
+    "name": "Extract Header Data",
+    "title": null,
+    "overview": "Move your mouse over the image to the left to zoom in",
+    "isScored": false,
+    "hasHelpImages": false,
+    "sharingStatusCode": "unrestricted",
+    "hasReplacement": false,
+    "toolCode": "zoom",
+    "repeatMax": 1,
+    "inputDataTypeCode": "image",
+    "outputDataTypeCode": null,
+    "jobCategory": null,
+    "extraJson": "{\"TaskTitle\": \"Get the store name and other data from a receipt\", \"TaskReward\": 0.05, \"TaskDescription\": \"Use a zoom tool to look at the receipt and answer a few questions\"}",
+    "defaultStartTime": null,
+    "defaultWeekendStartTime": null,
+    "defaultSchedulingWindow": null,
+    "defaultWeekendSchedulingWindow": null,
+    "importSourceTypeCode": null,
+    "taskCodeTemplate": null,
+    "sampleDataIdentifier": null,
+    "sampleCsvData": null,
+    "sampleDataLimit": null,
+    "sampleDataAnalysisJson": null,
+    "codifyFieldsOnImport": null,
+    "initialImportFields": [
+
+    ],
+    "importFieldsJson": null,
+    "questions": [
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "identifer",
+            "type": "text",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": true,
+            "text": "What is the receipt identifier?  It is usually at the top and looks like K1024-111.  Guess if you can, or just put in the first letter if you can't. (The first letter is from the name of the store).",
+            "required": true,
+            "hidden": false,
+            "default": "",
+            "condition": "",
+            "includeCondition": "",
+            "consensus": true,
+            "help": "",
+            "pattern": "",
+            "title": "",
+            "order_idx": 1,
+            "smsText": "What is the receipt identifier?  It is usually at the top and looks like K1024-111.  Guess if you can, or just put in the first letter if you can't. (The first letter is from the name of the store)."
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "store_code",
+            "type": "radio",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "What store is this receipt from?",
+            "required": true,
+            "hidden": false,
+            "default": "",
+            "condition": "",
+            "includeCondition": "",
+            "consensus": true,
+            "help": "",
+            "pattern": "",
+            "title": "",
+            "choicesUrl": "",
+            "otherLabel": "Other",
+            "order_idx": 2,
+            "smsText": "What store is this receipt from? (1=KFC,2=Subway,3=McDonalds)",
+            "choices": [
+                {
+                    "value": "kfc",
+                    "text": "KFC",
+                    "url": ""
+                },
+                {
+                    "value": "subway",
+                    "text": "Subway",
+                    "url": ""
+                },
+                {
+                    "value": "mcd",
+                    "text": "McDonalds",
+                    "url": ""
+                }
+            ]
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "date",
+            "type": "date",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": true,
+            "text": "What is the date of this receipt?  If unreadable, put in 01/01/2000",
+            "required": true,
+            "hidden": false,
+            "default": "",
+            "condition": "",
+            "includeCondition": "",
+            "consensus": true,
+            "help": "month/day/year",
+            "pattern": "",
+            "title": "",
+            "order_idx": 3,
+            "smsText": "What is the date of this receipt?  If unreadable, put in 01/01/2000",
+            "min": "",
+            "max": ""
+        },
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "time",
+            "type": "radio",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": true,
+            "text": "What time was this receipt?",
+            "required": true,
+            "hidden": false,
+            "default": "",
+            "condition": "",
+            "includeCondition": "",
+            "consensus": true,
+            "help": "",
+            "pattern": "",
+            "title": "",
+            "choicesUrl": "",
+            "otherLabel": "",
+            "order_idx": 4,
+            "smsText": "What time was this receipt? (1=Before 10:30AM,2=10:30AM - 2PM,3=2PM-5:30PM,4=After 5:30PM,5=Receipt does not say / not sure)",
+            "choices": [
+                {
+                    "value": "morning",
+                    "text": "Before 10:30AM",
+                    "url": ""
+                },
+                {
+                    "value": "lunch",
+                    "text": "10:30AM - 2PM",
+                    "url": ""
+                },
+                {
+                    "value": "afternoon",
+                    "text": "2PM-5:30PM",
+                    "url": ""
+                },
+                {
+                    "value": "evening",
+                    "text": "After 5:30PM",
+                    "url": ""
+                },
+                {
+                    "value": "not_sure",
+                    "text": "Receipt does not say / not sure",
+                    "url": ""
+                }
+            ]
+        }
+    ],
+    "replacements": {
+
+    },
+    "id": 71,
+    "showHelpImages": true
+}
