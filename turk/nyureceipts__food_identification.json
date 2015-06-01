@@ -1,0 +1,76 @@
+{
+    "categoryCode": "turk",
+    "projectId": 3,
+    "code": "food_identification",
+    "name": "Food Identification",
+    "title": null,
+    "overview": null,
+    "isScored": false,
+    "hasHelpImages": false,
+    "sharingStatusCode": "not_shared",
+    "hasReplacement": false,
+    "toolCode": "image",
+    "repeatMax": 1,
+    "inputDataTypeCode": "image",
+    "outputDataTypeCode": "other",
+    "jobCategory": null,
+    "extraJson": "{\"TaskTitle\": \"Identify a single food item on a receipt\", \"TaskReward\": 0.03, \"TaskDescription\": \"You'll chose from a pre-exsting list\"}",
+    "defaultStartTime": null,
+    "defaultWeekendStartTime": null,
+    "defaultSchedulingWindow": null,
+    "defaultWeekendSchedulingWindow": null,
+    "importSourceTypeCode": null,
+    "taskCodeTemplate": null,
+    "sampleDataIdentifier": null,
+    "sampleCsvData": null,
+    "sampleDataLimit": null,
+    "sampleDataAnalysisJson": null,
+    "codifyFieldsOnImport": null,
+    "initialImportFields": [
+
+    ],
+    "importFieldsJson": null,
+    "questions": [
+        {
+            "phenxSource": null,
+            "phenxVarName": null,
+            "phenxVarPrefix": null,
+            "code": "food",
+            "type": "dropdown",
+            "shortDisplay": null,
+            "answerCount": null,
+            "isConsensus": false,
+            "text": "What food is this?  Choose from the list",
+            "required": false,
+            "hidden": false,
+            "default": "",
+            "condition": "",
+            "includeCondition": "",
+            "consensus": false,
+            "help": "",
+            "pattern": "",
+            "title": "",
+            "choicesUrl": "",
+            "otherLabel": "",
+            "choices": [
+                {
+                    "value": "1",
+                    "text": "",
+                    "url": ""
+                },
+                {
+                    "value": "2",
+                    "text": "",
+                    "url": ""
+                }
+            ],
+            "order_idx": 1,
+            "smsText": " What food is this?  Choose from the list. Choose from http://nyureceipts.l.survos.net/app_dev.php/survey/Question/m/415"
+        }
+    ],
+    "replacements": {
+
+    },
+    "id": 83,
+    "showHelpImages": true
+}
