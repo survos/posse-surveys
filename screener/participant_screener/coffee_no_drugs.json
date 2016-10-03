@@ -1,0 +1,120 @@
+{
+    "isScored": true,
+    "hasHelpImages": false,
+    "replacements": [],
+    "repeatMax": 1,
+    "id": 37,
+    "questions": [
+        {
+            "code": "coffee",
+            "type": "radio",
+            "survey": {},
+            "help": "",
+            "text": "How much coffee do you drink?",
+            "score": "",
+            "hidden": false,
+            "choices": [
+                {
+                    "url": "",
+                    "text": "None",
+                    "score": "0",
+                    "value": "none"
+                },
+                {
+                    "url": "",
+                    "text": "Rarely",
+                    "score": "1",
+                    "value": "rarely"
+                },
+                {
+                    "url": "",
+                    "text": "Frequently",
+                    "score": "5",
+                    "value": "frequently"
+                }
+            ],
+            "default": "",
+            "required": true,
+            "subscale": "",
+            "condition": "",
+            "consensus": false,
+            "order_idx": 1,
+            "otherLabel": "",
+            "includeCondition": "",
+            "smsText": "How much coffee do you drink? (1=None,2=Rarely,3=Frequently)"
+        },
+        {
+            "code": "meds",
+            "type": "radio",
+            "survey": {},
+            "help": "",
+            "text": "Do you ever take sleeping medication?",
+            "score": "",
+            "hidden": false,
+            "choices": [
+                {
+                    "url": "",
+                    "text": "No",
+                    "score": "0",
+                    "value": "no"
+                },
+                {
+                    "url": "",
+                    "text": "Yes",
+                    "score": "5",
+                    "value": "yes"
+                }
+            ],
+            "default": "",
+            "required": true,
+            "subscale": "",
+            "condition": "",
+            "consensus": false,
+            "order_idx": 2,
+            "otherLabel": "",
+            "includeCondition": "",
+            "smsText": "Do you ever take sleeping medication? (1=No,2=Yes)"
+        },
+        {
+            "code": "email_within_project",
+            "type": "email",
+            "survey": {},
+            "help": "",
+            "text": "If you are accepted into the study, we will pay you via an Amazon Gift card.  What is your email address?",
+            "score": "",
+            "title": "",
+            "hidden": false,
+            "default": "",
+            "pattern": "",
+            "required": true,
+            "subscale": "",
+            "condition": "",
+            "consensus": false,
+            "order_idx": 3,
+            "includeCondition": "",
+            "smsText": "If you are accepted into the study, we will pay you via an Amazon Gift card.  What is your email address?"
+        },
+        {
+            "code": "phone_within_project",
+            "type": "phone",
+            "survey": {},
+            "help": "",
+            "text": "If you are accepted into the study, you will be receiving text message surveys for the next 3 weeks. What is the phone number of your mobile device?",
+            "score": "",
+            "title": "",
+            "hidden": false,
+            "default": "",
+            "pattern": "",
+            "required": true,
+            "subscale": "",
+            "condition": "",
+            "consensus": false,
+            "order_idx": 4,
+            "includeCondition": "",
+            "smsText": "If you are accepted into the study, you will be receiving text message surveys for the next 3 weeks. What is the phone number of your mobile device?"
+        }
+    ],
+    "subscales": [],
+    "consensus": false,
+    "showHelpImages": true
+}
