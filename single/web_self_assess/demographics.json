@@ -1,0 +1,195 @@
+{
+    "code": "demographics",
+    "isScored": false,
+    "hasHelpImages": false,
+    "replacements": [],
+    "repeatMax": 1,
+    "id": 105,
+    "questions": [
+        {
+            "code": "gender",
+            "type": "radio",
+            "isConsensus": false,
+            "survey": {},
+            "help": "",
+            "text": "Are you...?",
+            "hidden": false,
+            "choices": [
+                {
+                    "url": "",
+                    "text": "Female",
+                    "value": "1"
+                },
+                {
+                    "url": "",
+                    "text": "Male",
+                    "value": "2"
+                }
+            ],
+            "default": "",
+            "pattern": "",
+            "smsText": "Are you...? (1=Female,2=Male)",
+            "required": false,
+            "condition": "",
+            "consensus": false,
+            "order_idx": 1,
+            "choicesUrl": "",
+            "otherLabel": "",
+            "includeCondition": ""
+        },
+        {
+            "code": "education",
+            "type": "boolean",
+            "isConsensus": false,
+            "survey": {},
+            "help": "",
+            "text": "Have you graduated from high-school or received a GED?",
+            "hidden": false,
+            "choices": [],
+            "default": "",
+            "pattern": "",
+            "smsText": "Have you graduated from high-school or received a GED?",
+            "required": false,
+            "condition": "",
+            "consensus": false,
+            "order_idx": 2,
+            "choicesUrl": "",
+            "otherLabel": "",
+            "includeCondition": ""
+        },
+        {
+            "code": "hispanic",
+            "type": "radio",
+            "isConsensus": false,
+            "survey": {},
+            "help": "",
+            "text": "Are you of Hispanic or Latino origin, such as Latin American, Mexican, Puerto Rican, or Cuban?",
+            "hidden": false,
+            "choices": [
+                {
+                    "url": "",
+                    "text": "Yes, of Hispanic origin",
+                    "value": "1"
+                },
+                {
+                    "url": "",
+                    "text": "No, not of Hispanic origin",
+                    "value": "2"
+                }
+            ],
+            "default": "",
+            "pattern": "",
+            "smsText": "Are you of Hispanic or Latino origin, such as Latin American, Mexican, Puerto Rican, or Cuban? (1=Yes, of Hispanic origin,2=No, not of Hispanic origin)",
+            "required": false,
+            "condition": "",
+            "consensus": false,
+            "order_idx": 3,
+            "choicesUrl": "",
+            "otherLabel": "",
+            "includeCondition": ""
+        },
+        {
+            "code": "race",
+            "type": "checkbox",
+            "isConsensus": false,
+            "survey": {},
+            "help": "",
+            "text": "Which one or more of the following categories describe your race? Do you consider yourself\u2026?",
+            "hidden": false,
+            "choices": [
+                {
+                    "url": "",
+                    "text": "White/European American",
+                    "value": "1"
+                },
+                {
+                    "url": "",
+                    "text": "Black/African American",
+                    "value": "2"
+                },
+                {
+                    "url": "",
+                    "text": "American Indian/Alaskan Native/Native American",
+                    "value": "3"
+                },
+                {
+                    "url": "",
+                    "text": "Asian/Asian American",
+                    "value": "4"
+                },
+                {
+                    "url": "",
+                    "text": "Pacific Islander/Native Hawaiian",
+                    "value": "5"
+                }
+            ],
+            "default": "",
+            "pattern": "",
+            "smsText": "Which one or more of the following categories describe your race? Do you consider yourself\u2026? (1=White/European American,2=Black/African American,3=American Indian/Alaskan Native/Native American,4=Asian/Asian American,5=Pacific Islander/Native Hawaiian)",
+            "required": false,
+            "condition": "",
+            "consensus": false,
+            "noneLabel": "",
+            "order_idx": 4,
+            "choicesUrl": "",
+            "otherLabel": "Other race (please specify)",
+            "includeCondition": ""
+        },
+        {
+            "code": "income_instructions",
+            "type": "instruction",
+            "isConsensus": false,
+            "survey": {},
+            "help": "",
+            "text": "The next question is about the total income of YOUR HOUSEHOLD for the PAST 12 MONTHS. Please include your income PLUS the income of all members living in your household (including cohabiting partners and armed forces members living at home). Please count income BEFORE TAXES and from all sources (such as wages, salaries, tips, net income from a business, interest, dividends, child support, alimony, and Social Security, public assistance, pensions, or retirement benefits).",
+            "hidden": false,
+            "default": "",
+            "pattern": "",
+            "smsText": "The next question is about the total income of YOUR HOUSEHOLD for the PAST 12 MONTHS. Please include your income PLUS the income of all members living in your household (including cohabiting partners and armed forces members living at home). Please count income BEFORE TAXES and from all sources (such as wages, salaries, tips, net income from a business, interest, dividends, child support, alimony, and Social Security, public assistance, pensions, or retirement benefits).",
+            "required": false,
+            "condition": "",
+            "consensus": false,
+            "order_idx": 5,
+            "includeCondition": ""
+        },
+        {
+            "code": "income",
+            "type": "radio",
+            "isConsensus": false,
+            "survey": {},
+            "help": "",
+            "text": "Was your total HOUSEHOLD income in the past 12 months\u2026\n[IS THIS THE INCOME QUESTION WE WANT TO USE??]",
+            "hidden": false,
+            "choices": [
+                {
+                    "url": "",
+                    "text": "Below $35,000",
+                    "value": "1"
+                },
+                {
+                    "url": "",
+                    "text": "$35,000 or more",
+                    "value": "2"
+                },
+                {
+                    "url": "",
+                    "text": "Don't know",
+                    "value": "3"
+                }
+            ],
+            "default": "",
+            "pattern": "",
+            "smsText": "Was your total HOUSEHOLD income in the past 12 months\u2026\n[IS THIS THE INCOME QUESTION WE WANT TO USE??] (1=Below $35,000,2=$35,000 or more,3=Don't know)",
+            "required": false,
+            "condition": "",
+            "consensus": false,
+            "order_idx": 6,
+            "choicesUrl": "",
+            "otherLabel": "",
+            "includeCondition": ""
+        }
+    ],
+    "subscales": [],
+    "consensus": false,
+    "showHelpImages": true
+}
