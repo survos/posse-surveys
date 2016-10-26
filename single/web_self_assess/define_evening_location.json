@@ -1,0 +1,33 @@
+{
+    "code": "define_evening_location",
+    "isScored": false,
+    "hasHelpImages": false,
+    "replacements": [],
+    "repeatMax": 1,
+    "id": 22,
+    "toolCode": "create_staypoint",
+    "questions": [
+        {
+            "code": "evening_location",
+            "type": "staypoint",
+            "survey": {},
+            "help": "",
+            "text": "Draw a circle around where you'll be staying during the conference.",
+            "score": "",
+            "hidden": false,
+            "default": "",
+            "required": false,
+            "selector": "#map",
+            "subscale": "",
+            "condition": "",
+            "consensus": false,
+            "order_idx": 1,
+            "includeCondition": "",
+            "smsText": "Draw a circle around where you'll be staying during the conference."
+        }
+    ],
+    "marking": [],
+    "subscales": [],
+    "consensus": false,
+    "showHelpImages": true
+}
