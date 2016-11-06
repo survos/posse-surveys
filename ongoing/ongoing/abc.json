@@ -1,0 +1,33 @@
+{
+    "code": "abc",
+    "isScored": false,
+    "hasHelpImages": false,
+    "replacements": [],
+    "repeatMax": 1,
+    "id": 19,
+    "toolCode": "image",
+    "questions": [
+        {
+            "code": "q1",
+            "type": "boolean",
+            "survey": {},
+            "help": "",
+            "text": "abc",
+            "score": "",
+            "hidden": false,
+            "default": "",
+            "required": false,
+            "subscale": "",
+            "condition": "",
+            "consensus": false,
+            "order_idx": 1,
+            "includeCondition": "",
+            "smsText": "abc"
+        }
+    ],
+    "marking": [],
+    "surveyTypeCode": "ongoing",
+    "subscales": [],
+    "consensus": false,
+    "showHelpImages": true
+}
