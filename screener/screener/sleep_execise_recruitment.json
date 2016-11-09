@@ -1,0 +1,207 @@
+{
+    "code": "sleep_execise_recruitment",
+    "isScored": true,
+    "hasHelpImages": false,
+    "replacements": [],
+    "repeatMax": 1,
+    "id": 13,
+    "questions": [
+        {
+            "code": "applicant_age",
+            "type": "number",
+            "survey": [],
+            "max": 120,
+            "min": 0,
+            "help": "",
+            "step": 1,
+            "text": "Please enter your age",
+            "score": "",
+            "hidden": false,
+            "default": "{{ age >= 18 ? 1 : 0 }}",
+            "smsText": "Please enter your age",
+            "required": true,
+            "subscale": "",
+            "condition": "",
+            "consensus": false,
+            "order_idx": 1,
+            "includeCondition": ""
+        },
+        {
+            "code": "phone_type",
+            "type": "radio",
+            "survey": [],
+            "help": "",
+            "text": "What type of smartphone do you own?",
+            "score": "",
+            "hidden": false,
+            "choices": [
+                {
+                    "url": "",
+                    "text": "iPhone",
+                    "score": "1",
+                    "value": "1"
+                },
+                {
+                    "url": "",
+                    "text": "Android",
+                    "score": "1",
+                    "value": "2"
+                },
+                {
+                    "url": "",
+                    "text": "None",
+                    "score": "0",
+                    "value": "3"
+                }
+            ],
+            "default": "",
+            "smsText": "What type of smartphone do you own? (1=iPhone,2=Android,3=None)",
+            "required": true,
+            "subscale": "",
+            "condition": "",
+            "consensus": false,
+            "order_idx": 2,
+            "otherLabel": "",
+            "includeCondition": ""
+        },
+        {
+            "code": "work_vs_sleep",
+            "type": "radio",
+            "survey": [],
+            "help": "",
+            "text": "Do you work at night or do you usually sleep?",
+            "score": "",
+            "hidden": false,
+            "choices": [
+                {
+                    "url": "",
+                    "text": "I work at night",
+                    "score": "0",
+                    "value": "1"
+                },
+                {
+                    "url": "",
+                    "text": "I usually sleep at night",
+                    "score": "1",
+                    "value": "2"
+                }
+            ],
+            "default": "",
+            "smsText": "Do you work at night or do you usually sleep? (1=I work at night,2=I usually sleep at night)",
+            "required": true,
+            "subscale": "",
+            "condition": "",
+            "consensus": false,
+            "order_idx": 3,
+            "otherLabel": "",
+            "includeCondition": ""
+        },
+        {
+            "code": "travel_vs_home",
+            "type": "radio",
+            "survey": [],
+            "help": "",
+            "text": "Do you usually travel at least 1/2 mile during the day or you spend most of the day at home?",
+            "score": "",
+            "hidden": false,
+            "choices": [
+                {
+                    "url": "",
+                    "text": "I travel at least 1/2 mile during the day",
+                    "score": "1",
+                    "value": "1"
+                },
+                {
+                    "url": "",
+                    "text": "I spend the time at home",
+                    "score": "0",
+                    "value": "2"
+                }
+            ],
+            "default": "",
+            "smsText": "Do you usually travel at least 1/2 mile during the day or you spend most of the day at home? (1=I travel at least 1/2 mile during the day,2=I spend the time at home)",
+            "required": true,
+            "subscale": "",
+            "condition": "",
+            "consensus": false,
+            "order_idx": 4,
+            "otherLabel": "",
+            "includeCondition": ""
+        },
+        {
+            "code": "TnC",
+            "type": "radio",
+            "survey": [],
+            "help": "",
+            "text": "Do you agree with Terms and Conditions http://sleep-exercise.stagingsurvos.com/project/privacy_policy ?",
+            "score": "",
+            "hidden": false,
+            "choices": [
+                {
+                    "url": "",
+                    "text": "Yes",
+                    "score": "1",
+                    "value": "1"
+                },
+                {
+                    "url": "",
+                    "text": "No",
+                    "score": "0",
+                    "value": "2"
+                }
+            ],
+            "default": "",
+            "smsText": "Do you agree with Terms and Conditions http://sleep-exercise.stagingsurvos.com/project/privacy_policy ? (1=Yes,2=No)",
+            "required": true,
+            "subscale": "",
+            "condition": "",
+            "consensus": false,
+            "order_idx": 5,
+            "otherLabel": "",
+            "includeCondition": ""
+        },
+        {
+            "code": "email_within_project",
+            "type": "email",
+            "survey": {},
+            "help": "",
+            "text": "You will need an email to log into the study and the tracking app. Please enter your email address",
+            "score": "",
+            "title": "",
+            "hidden": false,
+            "default": "",
+            "pattern": "",
+            "required": true,
+            "subscale": "",
+            "condition": "",
+            "consensus": false,
+            "order_idx": 6,
+            "includeCondition": "",
+            "smsText": "You will need an email to log into the study and the tracking app. Please enter your email address"
+        },
+        {
+            "code": "plain_password",
+            "type": "text",
+            "survey": {},
+            "help": "",
+            "text": "Please enter the password that you're going to use to login",
+            "score": "",
+            "title": "",
+            "hidden": false,
+            "default": "",
+            "pattern": "",
+            "required": true,
+            "subscale": "",
+            "condition": "",
+            "consensus": false,
+            "order_idx": 7,
+            "includeCondition": "",
+            "smsText": "Please enter the password that you're going to use to login"
+        }
+    ],
+    "marking": [],
+    "moduleCode": "screener",
+    "subscales": [],
+    "consensus": false,
+    "showHelpImages": true
+}
