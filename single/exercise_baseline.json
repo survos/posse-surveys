@@ -1,0 +1,111 @@
+{
+    "code": "exercise_baseline",
+    "isScored": false,
+    "hasHelpImages": false,
+    "replacements": [],
+    "repeatMax": 1,
+    "id": 14,
+    "questions": [
+        {
+            "code": "time_walking",
+            "type": "number",
+            "survey": {},
+            "max": 1440,
+            "min": 0,
+            "help": "",
+            "step": 1,
+            "text": "How many minutes per day, on average, do you spend walking?",
+            "score": "",
+            "hidden": false,
+            "default": "",
+            "required": true,
+            "subscale": "",
+            "condition": "",
+            "consensus": false,
+            "order_idx": 1,
+            "includeCondition": "",
+            "smsText": "How many minutes per day, on average, do you spend walking?"
+        },
+        {
+            "code": "time_exercise",
+            "type": "number",
+            "survey": {},
+            "max": 1440,
+            "min": 0,
+            "help": "",
+            "step": 1,
+            "text": "How many minutes per day, on average, do you spend in vigorous exercise?",
+            "score": "",
+            "hidden": false,
+            "default": "",
+            "required": true,
+            "subscale": "",
+            "condition": "",
+            "consensus": false,
+            "order_idx": 2,
+            "includeCondition": "",
+            "smsText": "How many minutes per day, on average, do you spend in vigorous exercise?"
+        },
+        {
+            "code": "exercise_feeling",
+            "type": "radio",
+            "survey": {},
+            "help": "",
+            "text": "How do you feel about the amount of exercise you get?",
+            "score": "",
+            "hidden": false,
+            "choices": [
+                {
+                    "url": "",
+                    "text": "Too much, I\u2019m obsessive",
+                    "score": "",
+                    "value": "1"
+                },
+                {
+                    "url": "",
+                    "text": "About the right amount",
+                    "score": "",
+                    "value": "2"
+                },
+                {
+                    "url": "",
+                    "text": "I wish I did more",
+                    "score": "",
+                    "value": "3"
+                }
+            ],
+            "default": "",
+            "required": true,
+            "subscale": "",
+            "condition": "",
+            "consensus": false,
+            "order_idx": 3,
+            "otherLabel": "",
+            "includeCondition": "",
+            "smsText": "How do you feel about the amount of exercise you get? (1=Too much, I\u2019m obsessive,2=About the right amount,3=I wish I did more)"
+        },
+        {
+            "code": "place_exercise",
+            "type": "staypoint",
+            "survey": {},
+            "help": "",
+            "text": "Draw a circle around where you sometimes exercise",
+            "score": "",
+            "hidden": false,
+            "default": "",
+            "required": true,
+            "selector": "#map",
+            "subscale": "",
+            "condition": "",
+            "consensus": false,
+            "order_idx": 4,
+            "includeCondition": "",
+            "smsText": "Draw a circle around where you sometimes exercise"
+        }
+    ],
+    "marking": [],
+    "moduleCode": "single",
+    "subscales": [],
+    "consensus": false,
+    "showHelpImages": true
+}
