@@ -1,0 +1,226 @@
+{
+    "code": "recruitment_screener",
+    "isScored": true,
+    "hasHelpImages": false,
+    "replacements": [],
+    "repeatMax": 1,
+    "id": 12,
+    "questions": [
+        {
+            "code": "participant_age",
+            "type": "number",
+            "survey": [],
+            "max": 120,
+            "min": 0,
+            "help": "",
+            "step": 1,
+            "text": "Please enter your age",
+            "score": "1",
+            "hidden": false,
+            "default": "",
+            "smsText": "Please enter your age",
+            "required": true,
+            "subscale": "",
+            "condition": "{{ age >= 18 ? 1 : 0 }}",
+            "consensus": false,
+            "order_idx": 1,
+            "includeCondition": ""
+        },
+        {
+            "code": "phone_type",
+            "type": "radio",
+            "survey": [],
+            "help": "",
+            "text": "What of kind smartphone do you have?",
+            "score": "",
+            "hidden": false,
+            "choices": [
+                {
+                    "url": "",
+                    "text": "iPhone",
+                    "score": "1",
+                    "value": "1"
+                },
+                {
+                    "url": "",
+                    "text": "Android",
+                    "score": "1",
+                    "value": "2"
+                },
+                {
+                    "url": "",
+                    "text": "None",
+                    "score": "0",
+                    "value": "3"
+                }
+            ],
+            "default": "",
+            "smsText": "What of kind smartphone do you have? (1=iPhone,2=Android,3=None)",
+            "required": true,
+            "subscale": "",
+            "condition": "",
+            "consensus": false,
+            "order_idx": 2,
+            "otherLabel": "",
+            "includeCondition": ""
+        },
+        {
+            "code": "agreement",
+            "type": "radio",
+            "survey": [],
+            "help": "",
+            "text": "Do you agree to Terms and Conditions ?",
+            "score": "",
+            "hidden": false,
+            "choices": [
+                {
+                    "url": "",
+                    "text": "No",
+                    "score": "0",
+                    "value": "1"
+                },
+                {
+                    "url": "",
+                    "text": "Yes",
+                    "score": "1",
+                    "value": "2"
+                }
+            ],
+            "default": "",
+            "smsText": "Do you agree to Terms and Conditions ? (1=No,2=Yes)",
+            "required": true,
+            "subscale": "",
+            "condition": "",
+            "consensus": false,
+            "order_idx": 3,
+            "otherLabel": "",
+            "includeCondition": ""
+        },
+        {
+            "code": "travel_vs_home",
+            "type": "radio",
+            "survey": [],
+            "help": "",
+            "text": "Do you usually travel at least \u00bd mile or you spend time mostly at home?",
+            "score": "",
+            "hidden": false,
+            "choices": [
+                {
+                    "url": "",
+                    "text": "I travel at least \u00bd mile during the day",
+                    "score": "1",
+                    "value": "1"
+                },
+                {
+                    "url": "",
+                    "text": "I usually stay at home",
+                    "score": "0",
+                    "value": "2"
+                }
+            ],
+            "default": "",
+            "smsText": "Do you usually travel at least \u00bd mile or you spend time mostly at home? (1=I travel at least \u00bd mile during the day,2=I usually stay at home)",
+            "required": true,
+            "subscale": "",
+            "condition": "",
+            "consensus": false,
+            "order_idx": 4,
+            "otherLabel": "",
+            "includeCondition": ""
+        },
+        {
+            "code": "q5",
+            "type": "radio",
+            "survey": [],
+            "help": "",
+            "text": "Do you usually work or sleep at night?",
+            "score": "",
+            "hidden": false,
+            "choices": [
+                {
+                    "url": "",
+                    "text": "I usually work at night",
+                    "score": "0",
+                    "value": "1"
+                },
+                {
+                    "url": "",
+                    "text": "I usually sleep at night",
+                    "score": "1",
+                    "value": "2"
+                }
+            ],
+            "default": "",
+            "smsText": "Do you usually work or sleep at night? (1=I usually work at night,2=I usually sleep at night)",
+            "required": true,
+            "subscale": "",
+            "condition": "",
+            "consensus": false,
+            "order_idx": 5,
+            "otherLabel": "",
+            "includeCondition": ""
+        },
+        {
+            "code": "email_within_project",
+            "type": "email",
+            "survey": [],
+            "help": "",
+            "text": "You will need an email to log into the app, so please provide your email address",
+            "score": "",
+            "title": "",
+            "hidden": false,
+            "default": "",
+            "pattern": "",
+            "smsText": "You will need an email to log into the app, so please provide your email address",
+            "required": true,
+            "subscale": "",
+            "condition": "",
+            "consensus": false,
+            "order_idx": 6,
+            "includeCondition": ""
+        },
+        {
+            "code": "phone_within_project",
+            "type": "phone",
+            "survey": {},
+            "help": "",
+            "text": "You will be receiving surveys through SMS. Please provide your phone number",
+            "score": "",
+            "title": "",
+            "hidden": false,
+            "default": "",
+            "pattern": "",
+            "required": true,
+            "subscale": "",
+            "condition": "",
+            "consensus": false,
+            "order_idx": 7,
+            "includeCondition": "",
+            "smsText": "You will be receiving surveys through SMS. Please provide your phone number"
+        },
+        {
+            "code": "plain_password",
+            "type": "text",
+            "survey": [],
+            "help": "",
+            "text": "Please define your password that you will use to log into the app",
+            "score": "",
+            "title": "",
+            "hidden": false,
+            "default": "",
+            "pattern": "",
+            "smsText": "Please define your password that you will use to log into the app",
+            "required": true,
+            "subscale": "",
+            "condition": "",
+            "consensus": false,
+            "order_idx": 8,
+            "includeCondition": ""
+        }
+    ],
+    "marking": [],
+    "moduleCode": "screener",
+    "subscales": [],
+    "consensus": false,
+    "showHelpImages": true
+}
