@@ -1,0 +1,65 @@
+{
+    "waves": [
+        {
+            "duration": 7
+        }
+    ],
+    "survey": {
+        "code": "tv_usage",
+        "overview": "Welcome to the TV Usage survey!",
+        "isScored": false,
+        "hasHelpImages": false,
+        "replacements": [],
+        "repeatMax": 1,
+        "id": 154,
+        "questions": [
+            {
+                "code": "tv_hours",
+                "type": "number",
+                "survey": {
+                    "moduleCode": "ongoing"
+                },
+                "max": 60,
+                "min": 0,
+                "text": "How many hours of TV each week do you watch?",
+                "required": true,
+                "order_idx": 1,
+                "smsText": "How many hours of TV each week do you watch?"
+            },
+            {
+                "code": "tv_pleasure",
+                "type": "radio-range",
+                "isConsensus": true,
+                "survey": {
+                    "moduleCode": "ongoing"
+                },
+                "max": 9,
+                "min": 0,
+                "text": "How important is TV to you?",
+                "required": true,
+                "condition": "tv_hours >= 1",
+                "consensus": true,
+                "leftLabel": "Not at all",
+                "order_idx": 2,
+                "rightLabel": "A whole lot",
+                "smsText": "How important is TV to you? (0=Not at all 9=A whole lot)"
+            },
+            {
+                "code": "age",
+                "type": "number",
+                "survey": {
+                    "moduleCode": "ongoing"
+                },
+                "text": "How old are you?",
+                "required": true,
+                "order_idx": 3,
+                "smsText": "How old are you?"
+            }
+        ],
+        "marking": [],
+        "moduleCode": "ongoing",
+        "subscales": [],
+        "consensus": false,
+        "showHelpImages": true
+    }
+}
