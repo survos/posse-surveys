@@ -1,0 +1,34 @@
+{
+    "code": "apha_researcher_sms_screener",
+    "isScored": false,
+    "hasHelpImages": false,
+    "replacements": [],
+    "repeatMax": 1,
+    "id": 24,
+    "questions": [
+        {
+            "code": "q1",
+            "type": "text",
+            "survey": {},
+            "help": "",
+            "text": "Welcome to APHA Rearch! Please click this link to register http://apha-denver.stagingsurvos.com/observe",
+            "score": "",
+            "title": "",
+            "hidden": false,
+            "default": "",
+            "pattern": "",
+            "required": false,
+            "subscale": "",
+            "condition": "",
+            "consensus": false,
+            "order_idx": 1,
+            "includeCondition": "",
+            "smsText": "Welcome to APHA Rearch! Please click this link to register http://apha-denver.stagingsurvos.com/observe"
+        }
+    ],
+    "marking": [],
+    "surveyTypeCode": "participant_screener",
+    "subscales": [],
+    "consensus": false,
+    "showHelpImages": true
+}
