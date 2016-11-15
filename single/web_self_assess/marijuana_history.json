@@ -1,0 +1,91 @@
+{
+    "code": "marijuana_history",
+    "isScored": false,
+    "hasHelpImages": false,
+    "replacements": [],
+    "repeatMax": 1,
+    "id": 20,
+    "questions": [
+        {
+            "code": "used_marijuana",
+            "type": "radio",
+            "survey": {},
+            "help": "",
+            "text": "Have you ever smoked marijuana in your life?",
+            "score": "",
+            "hidden": false,
+            "choices": [
+                {
+                    "url": "",
+                    "text": "Never",
+                    "score": "",
+                    "value": "never"
+                },
+                {
+                    "url": "",
+                    "text": "Once or twice",
+                    "score": "",
+                    "value": "once_or_twice"
+                },
+                {
+                    "url": "",
+                    "text": "More than twice",
+                    "score": "",
+                    "value": "More than twice"
+                }
+            ],
+            "default": "",
+            "required": true,
+            "subscale": "",
+            "condition": "",
+            "consensus": false,
+            "order_idx": 1,
+            "otherLabel": "",
+            "includeCondition": "",
+            "smsText": "Have you ever smoked marijuana in your life? (1=Never,2=Once or twice,3=More than twice)"
+        },
+        {
+            "code": "q2",
+            "type": "radio",
+            "survey": {},
+            "help": "",
+            "text": "When was the last time you smoked marijuana?",
+            "score": "",
+            "hidden": false,
+            "choices": [
+                {
+                    "url": "",
+                    "text": "Within the last week",
+                    "score": "",
+                    "value": "last_week"
+                },
+                {
+                    "url": "",
+                    "text": "Within the last month",
+                    "score": "",
+                    "value": "last_month"
+                },
+                {
+                    "url": "",
+                    "text": "More than a month ago",
+                    "score": "",
+                    "value": "more_than_a_month"
+                }
+            ],
+            "default": "",
+            "required": true,
+            "subscale": "",
+            "condition": "used_marijuana != 'never'",
+            "consensus": false,
+            "order_idx": 2,
+            "otherLabel": "Other",
+            "includeCondition": "",
+            "smsText": "When was the last time you smoked marijuana? (1=Within the last week,2=Within the last month,3=More than a month ago)"
+        }
+    ],
+    "marking": [],
+    "surveyTypeCode": "web_self_assess",
+    "subscales": [],
+    "consensus": false,
+    "showHelpImages": true
+}
