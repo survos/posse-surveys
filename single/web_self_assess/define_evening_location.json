@@ -27,6 +27,7 @@
         }
     ],
     "marking": [],
+    "surveyTypeCode": "web_self_assess",
     "subscales": [],
     "consensus": false,
     "showHelpImages": true
