@@ -1,0 +1,94 @@
+{
+    "code": "pot_exposure",
+    "isScored": false,
+    "hasHelpImages": false,
+    "replacements": [],
+    "repeatMax": 1,
+    "id": 19,
+    "questions": [
+        {
+            "code": "seen_pot_stores",
+            "type": "boolean",
+            "survey": {},
+            "help": "",
+            "text": "Have you seen any marijuana stores since your last survey (or today, if this is your first survey)?",
+            "score": "",
+            "hidden": false,
+            "default": "",
+            "required": true,
+            "subscale": "",
+            "condition": "",
+            "consensus": false,
+            "order_idx": 1,
+            "includeCondition": "",
+            "smsText": "Have you seen any marijuana stores since your last survey (or today, if this is your first survey)?"
+        },
+        {
+            "code": "seen_pot_users",
+            "type": "radio",
+            "survey": {},
+            "help": "",
+            "text": "Have you seen anyone using marijuana since your last survey?",
+            "score": "",
+            "hidden": false,
+            "choices": [
+                {
+                    "url": "",
+                    "text": "None",
+                    "score": "",
+                    "value": "none"
+                },
+                {
+                    "url": "",
+                    "text": "Few",
+                    "score": "",
+                    "value": "few"
+                },
+                {
+                    "url": "",
+                    "text": "More than a few",
+                    "score": "",
+                    "value": "many"
+                }
+            ],
+            "default": "",
+            "required": true,
+            "subscale": "",
+            "condition": "",
+            "consensus": false,
+            "order_idx": 2,
+            "otherLabel": "",
+            "includeCondition": "",
+            "smsText": "Have you seen anyone using marijuana since your last survey? (1=None,2=Few,3=More than a few)"
+        },
+        {
+            "code": "pot_desire",
+            "type": "radio-range",
+            "survey": {},
+            "max": 5,
+            "min": 1,
+            "help": "",
+            "step": 1,
+            "text": "On a scale of 1-5, how much would you like to smoke marijuana now?",
+            "score": "",
+            "title": "",
+            "hidden": false,
+            "default": "",
+            "pattern": "",
+            "required": true,
+            "subscale": "",
+            "condition": "",
+            "consensus": false,
+            "leftLabel": "Not at all",
+            "order_idx": 3,
+            "rightLabel": "A Lot",
+            "includeCondition": "",
+            "smsText": "On a scale of 1-5, how much would you like to smoke marijuana now? (1=Not at all 5=A Lot)"
+        }
+    ],
+    "marking": [],
+    "surveyTypeCode": "sms_scheduled",
+    "subscales": [],
+    "consensus": false,
+    "showHelpImages": true
+}
