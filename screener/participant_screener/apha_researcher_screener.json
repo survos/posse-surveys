@@ -1,0 +1,142 @@
+{
+    "code": "apha_researcher_screener",
+    "isScored": true,
+    "hasHelpImages": false,
+    "replacements": [],
+    "repeatMax": 1,
+    "id": 18,
+    "questions": [
+        {
+            "code": "pot_store_exposure",
+            "type": "radio",
+            "survey": [],
+            "help": "",
+            "text": "How often do you see places that sell marijuana?",
+            "score": "",
+            "hidden": false,
+            "choices": [
+                {
+                    "url": "",
+                    "text": "None",
+                    "score": "0",
+                    "value": "none"
+                },
+                {
+                    "url": "",
+                    "text": "Rarely",
+                    "score": "1",
+                    "value": "rarely"
+                },
+                {
+                    "url": "",
+                    "text": "Frequently",
+                    "score": "2",
+                    "value": "frequently"
+                }
+            ],
+            "default": "",
+            "smsText": "How often do you see places that sell marijuana? (1=None,2=Rarely,3=Frequently)",
+            "required": true,
+            "subscale": "",
+            "condition": "",
+            "consensus": false,
+            "order_idx": 1,
+            "otherLabel": "",
+            "includeCondition": ""
+        },
+        {
+            "code": "agree_to_t_and_c",
+            "type": "radio",
+            "survey": [],
+            "help": "",
+            "text": "This is a test study, you will not be paid, you data is not private.  Do you agree to these onerous terms?",
+            "score": "",
+            "hidden": false,
+            "choices": [
+                {
+                    "url": "",
+                    "text": "No",
+                    "score": "0",
+                    "value": "no"
+                },
+                {
+                    "url": "",
+                    "text": "Yes",
+                    "score": "5",
+                    "value": "yes"
+                }
+            ],
+            "default": "",
+            "smsText": "This is a test study, you will not be paid, you data is not private.  Do you agree to these onerous terms? (1=No,2=Yes)",
+            "required": true,
+            "subscale": "",
+            "condition": "",
+            "consensus": false,
+            "order_idx": 2,
+            "otherLabel": "",
+            "includeCondition": ""
+        },
+        {
+            "code": "email_within_project",
+            "type": "email",
+            "survey": [],
+            "help": "",
+            "text": "We need your email address so you can log into the mobile app.  What is your email address?",
+            "score": "",
+            "title": "",
+            "hidden": false,
+            "default": "",
+            "pattern": "",
+            "smsText": "We need your email address so you can log into the mobile app.  What is your email address?",
+            "required": true,
+            "subscale": "",
+            "condition": "",
+            "consensus": false,
+            "order_idx": 3,
+            "includeCondition": ""
+        },
+        {
+            "code": "phone_within_project",
+            "type": "phone",
+            "survey": [],
+            "help": "",
+            "text": "If you are accepted into the study, you will be receiving text message surveys for the next 3 days. What is the phone number of your mobile device?",
+            "score": "",
+            "title": "",
+            "hidden": false,
+            "default": "",
+            "pattern": "",
+            "smsText": "If you are accepted into the study, you will be receiving text message surveys for the next 3 days. What is the phone number of your mobile device?",
+            "required": true,
+            "subscale": "",
+            "condition": "",
+            "consensus": false,
+            "order_idx": 4,
+            "includeCondition": ""
+        },
+        {
+            "code": "plain_password",
+            "type": "text",
+            "survey": {},
+            "help": "",
+            "text": "You'll need a password to log into this site again, and also into the mobile tracking app.  What password do you want to use?",
+            "score": "",
+            "title": "",
+            "hidden": false,
+            "default": "",
+            "pattern": "",
+            "required": true,
+            "subscale": "",
+            "condition": "",
+            "consensus": false,
+            "order_idx": 5,
+            "includeCondition": "",
+            "smsText": "You'll need a password to log into this site again, and also into the mobile tracking app.  What password do you want to use?"
+        }
+    ],
+    "marking": [],
+    "surveyTypeCode": "participant_screener",
+    "subscales": [],
+    "consensus": false,
+    "showHelpImages": true
+}
