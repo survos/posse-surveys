@@ -1,0 +1,171 @@
+{
+    "waves": [],
+    "survey": {
+        "code": "daily_positions",
+        "isScored": true,
+        "hasHelpImages": false,
+        "replacements": [],
+        "repeatMax": 1,
+        "id": 41,
+        "questions": [
+            {
+                "code": "point_count",
+                "type": "number",
+                "choices": [],
+                "survey": {
+                    "marking": null,
+                    "moduleCode": "tracking"
+                },
+                "toolSettings": [],
+                "text": "How many points were collected on DATE?",
+                "score": "{{ point_count > 50 ? 100 : 0 }}",
+                "order_idx": 1,
+                "smsText": "How many points were collected on DATE?"
+            },
+            {
+                "code": "heartbeat_count",
+                "type": "number",
+                "choices": [],
+                "survey": {
+                    "marking": null,
+                    "moduleCode": "tracking"
+                },
+                "toolSettings": [],
+                "text": "How many heartbeats?",
+                "score": "",
+                "order_idx": 2,
+                "smsText": "How many heartbeats?"
+            },
+            {
+                "code": "longest_gap",
+                "type": "number",
+                "choices": [],
+                "survey": {
+                    "marking": null,
+                    "moduleCode": "tracking"
+                },
+                "toolSettings": [],
+                "text": "Longest amount of time (in minutes) between two consecutive points",
+                "score": "",
+                "order_idx": 3,
+                "smsText": "Longest amount of time (in minutes) between two consecutive points"
+            },
+            {
+                "code": "login_count",
+                "type": "number",
+                "choices": [],
+                "survey": {
+                    "marking": null,
+                    "moduleCode": "tracking"
+                },
+                "toolSettings": [],
+                "text": "How many logins?",
+                "score": "",
+                "order_idx": 4,
+                "smsText": "How many logins?"
+            },
+            {
+                "code": "state_change_count",
+                "type": "number",
+                "choices": [],
+                "survey": {
+                    "marking": null,
+                    "moduleCode": "tracking"
+                },
+                "toolSettings": [],
+                "text": "How many state changes?",
+                "score": "",
+                "order_idx": 5,
+                "smsText": "How many state changes?"
+            },
+            {
+                "code": "turn_tracking_on_count",
+                "type": "number",
+                "choices": [],
+                "survey": {
+                    "marking": null,
+                    "moduleCode": "tracking"
+                },
+                "toolSettings": [],
+                "text": "How many times did the app get turned on?",
+                "score": "",
+                "order_idx": 6,
+                "smsText": "How many times did the app get turned on?"
+            },
+            {
+                "code": "turn_tracking_off_count",
+                "type": "number",
+                "choices": [],
+                "survey": {
+                    "marking": null,
+                    "moduleCode": "tracking"
+                },
+                "toolSettings": [],
+                "text": "How many times did the app get turned off?",
+                "score": "",
+                "order_idx": 7,
+                "smsText": "How many times did the app get turned off?"
+            },
+            {
+                "code": "no_event_count",
+                "type": "number",
+                "choices": [],
+                "survey": {
+                    "marking": null,
+                    "moduleCode": "tracking"
+                },
+                "toolSettings": [],
+                "text": "How many points with no associated triggers?",
+                "score": "",
+                "order_idx": 8,
+                "smsText": "How many points with no associated triggers?"
+            },
+            {
+                "code": "manual_trigger_count",
+                "type": "number",
+                "choices": [],
+                "survey": {
+                    "marking": null,
+                    "moduleCode": "tracking"
+                },
+                "toolSettings": [],
+                "text": "How many manual triggered locations?",
+                "score": "",
+                "order_idx": 9,
+                "smsText": "How many manual triggered locations?"
+            },
+            {
+                "code": "first_point_time",
+                "type": "text",
+                "choices": [],
+                "survey": {
+                    "marking": null,
+                    "moduleCode": "tracking"
+                },
+                "toolSettings": [],
+                "text": "what time was the first point in this interval received?",
+                "score": "",
+                "order_idx": 10,
+                "smsText": "what time was the first point in this interval received?"
+            },
+            {
+                "code": "last_point_time",
+                "type": "text",
+                "choices": [],
+                "survey": {
+                    "marking": null,
+                    "moduleCode": "tracking"
+                },
+                "toolSettings": [],
+                "text": "what time was the last point in this interval received?",
+                "score": "",
+                "order_idx": 11,
+                "smsText": "what time was the last point in this interval received?"
+            }
+        ],
+        "moduleCode": "tracking",
+        "subscales": [],
+        "consensus": false,
+        "showHelpImages": true
+    }
+}
