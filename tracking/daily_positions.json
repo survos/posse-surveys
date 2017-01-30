@@ -6,161 +6,150 @@
         "hasHelpImages": false,
         "replacements": [],
         "repeatMax": 1,
-        "id": 41,
+        "id": 8293,
         "questions": [
             {
                 "code": "point_count",
                 "type": "number",
                 "choices": [],
                 "survey": {
-                    "marking": null,
                     "moduleCode": "tracking"
                 },
                 "toolSettings": [],
                 "text": "How many points were collected on DATE?",
                 "score": "{{ point_count > 50 ? 100 : 0 }}",
-                "order_idx": 1,
-                "smsText": "How many points were collected on DATE?"
+                "smsText": "How many points were collected on DATE?",
+                "order_idx": 1
             },
             {
                 "code": "heartbeat_count",
                 "type": "number",
                 "choices": [],
                 "survey": {
-                    "marking": null,
                     "moduleCode": "tracking"
                 },
                 "toolSettings": [],
                 "text": "How many heartbeats?",
                 "score": "",
-                "order_idx": 2,
-                "smsText": "How many heartbeats?"
+                "smsText": "How many heartbeats?",
+                "order_idx": 2
             },
             {
                 "code": "longest_gap",
                 "type": "number",
                 "choices": [],
                 "survey": {
-                    "marking": null,
                     "moduleCode": "tracking"
                 },
                 "toolSettings": [],
                 "text": "Longest amount of time (in minutes) between two consecutive points",
                 "score": "",
-                "order_idx": 3,
-                "smsText": "Longest amount of time (in minutes) between two consecutive points"
+                "smsText": "Longest amount of time (in minutes) between two consecutive points",
+                "order_idx": 3
             },
             {
                 "code": "login_count",
                 "type": "number",
                 "choices": [],
                 "survey": {
-                    "marking": null,
                     "moduleCode": "tracking"
                 },
                 "toolSettings": [],
                 "text": "How many logins?",
                 "score": "",
-                "order_idx": 4,
-                "smsText": "How many logins?"
+                "smsText": "How many logins?",
+                "order_idx": 4
             },
             {
                 "code": "state_change_count",
                 "type": "number",
                 "choices": [],
                 "survey": {
-                    "marking": null,
                     "moduleCode": "tracking"
                 },
                 "toolSettings": [],
                 "text": "How many state changes?",
                 "score": "",
-                "order_idx": 5,
-                "smsText": "How many state changes?"
+                "smsText": "How many state changes?",
+                "order_idx": 5
             },
             {
                 "code": "turn_tracking_on_count",
                 "type": "number",
                 "choices": [],
                 "survey": {
-                    "marking": null,
                     "moduleCode": "tracking"
                 },
                 "toolSettings": [],
                 "text": "How many times did the app get turned on?",
                 "score": "",
-                "order_idx": 6,
-                "smsText": "How many times did the app get turned on?"
+                "smsText": "How many times did the app get turned on?",
+                "order_idx": 6
             },
             {
                 "code": "turn_tracking_off_count",
                 "type": "number",
                 "choices": [],
                 "survey": {
-                    "marking": null,
                     "moduleCode": "tracking"
                 },
                 "toolSettings": [],
                 "text": "How many times did the app get turned off?",
                 "score": "",
-                "order_idx": 7,
-                "smsText": "How many times did the app get turned off?"
+                "smsText": "How many times did the app get turned off?",
+                "order_idx": 7
             },
             {
                 "code": "no_event_count",
                 "type": "number",
                 "choices": [],
                 "survey": {
-                    "marking": null,
                     "moduleCode": "tracking"
                 },
                 "toolSettings": [],
                 "text": "How many points with no associated triggers?",
                 "score": "",
-                "order_idx": 8,
-                "smsText": "How many points with no associated triggers?"
+                "smsText": "How many points with no associated triggers?",
+                "order_idx": 8
             },
             {
                 "code": "manual_trigger_count",
                 "type": "number",
                 "choices": [],
                 "survey": {
-                    "marking": null,
                     "moduleCode": "tracking"
                 },
                 "toolSettings": [],
                 "text": "How many manual triggered locations?",
                 "score": "",
-                "order_idx": 9,
-                "smsText": "How many manual triggered locations?"
+                "smsText": "How many manual triggered locations?",
+                "order_idx": 9
             },
             {
                 "code": "first_point_time",
                 "type": "text",
                 "choices": [],
                 "survey": {
-                    "marking": null,
                     "moduleCode": "tracking"
                 },
                 "toolSettings": [],
                 "text": "what time was the first point in this interval received?",
                 "score": "",
-                "order_idx": 10,
-                "smsText": "what time was the first point in this interval received?"
+                "smsText": "what time was the first point in this interval received?",
+                "order_idx": 10
             },
             {
                 "code": "last_point_time",
                 "type": "text",
                 "choices": [],
                 "survey": {
-                    "marking": null,
                     "moduleCode": "tracking"
                 },
                 "toolSettings": [],
                 "text": "what time was the last point in this interval received?",
                 "score": "",
-                "order_idx": 11,
-                "smsText": "what time was the last point in this interval received?"
+                "smsText": "what time was the last point in this interval received?",
+                "order_idx": 11
             }
         ],
         "moduleCode": "tracking",
